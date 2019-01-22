@@ -69,4 +69,3 @@ def plot_digit(x):
     """ plots a provided MNIST digit """
     assert np.size(x) == 784
     plt.imshow(x.reshape((28,28)), interpolation='none', aspect='equal', cmap='gray')
-
