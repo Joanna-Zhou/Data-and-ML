@@ -1,0 +1,23 @@
+from kNNTraining import *
+
+def RMSELoss(datasetName, method, k):
+    '''
+    Takes a dataset and calculates the root-mean-square-error(RMSE) loss of the regression with specified distance metric amd k value
+    INPUT: databaseName: must be one of the regression datasets, can't be classification
+    INPUT: method: distance calculation method, 'l1', 'l2', or 'linf'
+    INPUT: k: number of nearest neighbours required
+    OUTPUT: a value of the RMSE loss
+    '''
+    errorList = []
+    kNNtest = kNNTraining(datasetName, method, k)
+    for i in range(kNNtest.num_testSet):
+        kNNValue, error, correctness = kNNtest.kNNRegression(kNNtest.x_test[i], kNNtest.y_test[i])
+        errorList.append(error)
+    rmse = np.sqrt(pow(np.array(errorList), 2).mean())
+    print('RMSE:', rmse)
+    # print('Errors:', errorList)
+
+
+if __name__ == '__main__':
+    # '''
+    RMSELoss('rosenbrock', 'linf', 3)

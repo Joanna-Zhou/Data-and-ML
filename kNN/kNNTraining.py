@@ -15,6 +15,8 @@ class kNNTraining:
         # self.xy_train, self.xy_valid, self.xy_test, self.num_dimension, self.num_classes, self.num_trainSet = concatenate(self.x_train, self.x_valid, self.x_test, self.y_train, self.y_valid, self.y_test)
         self.num_dimension = np.shape(self.x_test)[1]
         self.num_trainSet = np.shape(self.x_train)[0]
+        self.num_validSet = np.shape(self.x_valid)[0]
+        self.num_testSet = np.shape(self.x_test)[0]
 
     def kNNClassification(self, x, y):
         '''
@@ -32,7 +34,7 @@ class kNNTraining:
         # print('Classified in class', list(kNNClass).index(True), 'and it is actually in class', list(y).index(True))
 
         correctness = np.unique(kNNClass == actualClass)[0] # Compare to the actual class
-        print('Classified in class', list(kNNClass).index(True), '\nResult is', correctness)
+        # print('Classified in class', list(kNNClass).index(True), '\nResult is', correctness)
         return kNNClass, correctness
 
 
@@ -98,7 +100,7 @@ class kNNTraining:
 
 
 if __name__ == '__main__':
-    '''
+    # '''
     kNNtestClass = kNNTraining('iris', 'linf', 3) # iris or mnist_small
     for i in range(10): # This test yielded 9 true predictions and 1 false in 55 seconds
         kNNtestClass.kNNClassification(kNNtestClass.x_test[i], kNNtestClass.y_test[i])
@@ -107,4 +109,4 @@ if __name__ == '__main__':
     for i in range(0, 5): # This test yielded 9 true predictions and 1 false in 55 seconds
         # kNNtestReg.kNNRegression(kNNtestReg.x_valid[i], kNNtestReg.y_valid[i])
         kNNtestReg.kNNRegression(kNNtestReg.x_train[i], kNNtestReg.y_train[i])
-    # '''
+    '''
