@@ -17,9 +17,9 @@ def loadData(datasetName, foldIndex):
         x_train, x_valid, x_test, y_train, y_valid, y_test = load_dataset(datasetName)
 
     x_all = np.concatenate([x_train, x_valid])
-    x_train, x_valid = foldDataset(foldIndex, x_all)
+    x_train, x_valid = foldDataset(x_all, foldIndex)
     y_all = np.concatenate([y_train, y_valid])
-    y_train, y_valid = foldDataset(foldIndex, y_all)
+    y_train, y_valid = foldDataset(y_all, foldIndex)
 
     # Normalizetion of each x data
     mean = x_train.mean(axis=0, keepdims=True)
@@ -30,16 +30,23 @@ def loadData(datasetName, foldIndex):
 
     return x_train, x_valid, x_test, y_train, y_valid, y_test
 
-def foldDataset(foldIndex, x_all):
-    total = np.shape(x_all)[0]
-    oneFifth = round(total/5)
+
+def foldDataset(allData, foldIndex, fold=5):
+    '''
+    Split data into two sets of ratio 4:1 according to the foldIndex
+    INPUT: allData: concatenate dataset
+    OUTPUT: train, set: the 4:1 ratio datasets
+    '''
+    total = np.shape(allData)[0]
+    oneFifth = round(total/fold)
     if foldIndex in [1, 2, 3, 4]:
-        x_train = np.concatenate([x_all[:oneFifth*(foldIndex-1)], x_all[oneFifth*foldIndex:]])
-        x_test = np.array(x_all[oneFifth*(foldIndex-1):oneFifth*foldIndex])
+        train = np.concatenate([allData[:oneFifth*(foldIndex-1)], allData[oneFifth*foldIndex:]])
+        test = np.array(allData[oneFifth*(foldIndex-1):oneFifth*foldIndex])
     elif foldIndex == 5: # for the last fold, cound backwards so that it has the same number of data as the other folds
-        x_train = np.array(x_all[:(total-oneFifth)])
-        x_test = np.array(x_all[(total-oneFifth):])
-    return x_train, x_test
+        train = np.array(allData[:(total-oneFifth)])
+        test = np.array(allData[(total-oneFifth):])
+    return train, test
+
 
 def concatenate(x_train, x_valid, x_test, y_train, y_valid, y_test):
     '''
