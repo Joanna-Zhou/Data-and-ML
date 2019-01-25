@@ -4,16 +4,22 @@ import math
 from data_utils import load_dataset
 import numpy as np
 
-def loadData(datasetName):
+def loadData(datasetName, foldIndex):
     '''
     Loads the dataset and normalize the x_ sets
     INPUT: datasetName: a string of the name of file to be loaded. Note that this file must be in the same path as this file
+    INPUT: foldIndex: from 1 to 5, decides how to partition the dataset
     OUTPUT: 6 datasets in array form, 3 of which are normalized x data
     '''
     if datasetName == 'rosenbrock':
         x_train, x_valid, x_test, y_train, y_valid, y_test = load_dataset(datasetName, n_train=5000, d=2)
     else:
         x_train, x_valid, x_test, y_train, y_valid, y_test = load_dataset(datasetName)
+
+    x_all = np.concatenate([x_train, x_valid])
+    x_train, x_valid = foldDataset(foldIndex, x_all)
+    y_all = np.concatenate([y_train, y_valid])
+    y_train, y_valid = foldDataset(foldIndex, y_all)
 
     # Normalizetion of each x data
     mean = x_train.mean(axis=0, keepdims=True)
@@ -23,6 +29,17 @@ def loadData(datasetName):
     x_test = normalization(x_test, mean, stddev)
 
     return x_train, x_valid, x_test, y_train, y_valid, y_test
+
+def foldDataset(foldIndex, x_all):
+    total = np.shape(x_all)[0]
+    oneFifth = round(total/5)
+    if foldIndex in [1, 2, 3, 4]:
+        x_train = np.concatenate([x_all[:oneFifth*(foldIndex-1)], x_all[oneFifth*foldIndex:]])
+        x_test = np.array(x_all[oneFifth*(foldIndex-1):oneFifth*foldIndex])
+    elif foldIndex == 5: # for the last fold, cound backwards so that it has the same number of data as the other folds
+        x_train = np.array(x_all[:(total-oneFifth)])
+        x_test = np.array(x_all[(total-oneFifth):])
+    return x_train, x_test
 
 def concatenate(x_train, x_valid, x_test, y_train, y_valid, y_test):
     '''
@@ -74,7 +91,7 @@ def printData(dataset, item = 'both'):
 
 
 if __name__ == '__main__':
-    x_train, x_valid, x_test, y_train, y_valid, y_test = loadData('mnist_small')
-    xy_train, xy_valid, xy_test, num_dimension, num_classes, num_trainSet = concatenate(x_train, x_valid, x_test, y_train, y_valid, y_test)
-    print (num_dimension, num_classes)
-    printData(xy_test)
+    x_train, x_valid, x_test, y_train, y_valid, y_test = loadData('iris', 5)
+    # xy_train, xy_valid, xy_test, num_dimension, num_classes, num_trainSet = concatenate(x_train, x_valid, x_test, y_train, y_valid, y_test)
+    # print (num_dimension, num_classes)
+    # printData(xy_test)

@@ -1,7 +1,7 @@
 from kNNPreprocessing import *
 
 class kNNTraining:
-    def __init__(self, datasetName, method = 'l2', k = 1):
+    def __init__(self, datasetName, method, k, foldIndex):
         '''
         To run kNNTraining, please declare a class with the desired parameters and then call
         "kNNtest1.kNNRegression(kNNtest1.x_test[i], kNNtest1.y_test[i])" in a loop pf desired i
@@ -11,7 +11,7 @@ class kNNTraining:
 
         # Extraxt datasets associated with the dataset's name
         # x/y_train: the training sets, must be a N-by-D matrix for x_train and N-by-(#Class) for y_train
-        self.x_train, self.x_valid, self.x_test, self.y_train, self.y_valid, self.y_test = loadData(datasetName)
+        self.x_train, self.x_valid, self.x_test, self.y_train, self.y_valid, self.y_test = loadData(datasetName, foldIndex)
         # self.xy_train, self.xy_valid, self.xy_test, self.num_dimension, self.num_classes, self.num_trainSet = concatenate(self.x_train, self.x_valid, self.x_test, self.y_train, self.y_valid, self.y_test)
         self.num_dimension = np.shape(self.x_test)[1]
         self.num_trainSet = np.shape(self.x_train)[0]
@@ -56,7 +56,7 @@ class kNNTraining:
 
         error =  abs((kNNValue - actualValue)/actualValue) # Compare to the actual class
         correctness = (error < 0.25)
-        print('Predicted value is', kNNValue, '\nError is', error*100, '%', 'and considered', correctness)
+        # print('Predicted value is', kNNValue, '\nError is', error*100, '%', 'and considered', correctness)
         return kNNValue, error, correctness
 
 
@@ -101,7 +101,7 @@ class kNNTraining:
 
 if __name__ == '__main__':
     # '''
-    kNNtestClass = kNNTraining('iris', 'linf', 3) # iris or mnist_small
+    kNNtestClass = kNNTraining('iris', 'linf', 3, 5) # iris or mnist_small
     for i in range(10): # This test yielded 9 true predictions and 1 false in 55 seconds
         kNNtestClass.kNNClassification(kNNtestClass.x_test[i], kNNtestClass.y_test[i])
     '''
