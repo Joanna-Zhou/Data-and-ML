@@ -6,10 +6,9 @@ import numpy as np
 
 def loadData(datasetName):
     '''
-    Loads the dataset and process it into matrix form
+    Loads the dataset and normalize the x_ sets
     INPUT: datasetName: a string of the name of file to be loaded. Note that this file must be in the same path as this file
-    OUTPUT: Three matrixes of NORMALIZED paired dataset, each represented in a N x (D + #Class) matrix where each row is [x1, x2, .... xD, y1, y2, ..., y#Class]
-            And the dimension of x^(i) and y^(i), the latter being the number of classes, or 1 if regression
+    OUTPUT: 6 datasets in array form, 3 of which are normalized x data
     '''
     if datasetName == 'rosenbrock':
         x_train, x_valid, x_test, y_train, y_valid, y_test = load_dataset(datasetName, n_train=5000, d=2)
@@ -23,6 +22,15 @@ def loadData(datasetName):
     x_valed = normalization(x_valid, mean, stddev)
     x_test = normalization(x_test, mean, stddev)
 
+    return x_train, x_valid, x_test, y_train, y_valid, y_test
+
+def concatenate(x_train, x_valid, x_test, y_train, y_valid, y_test):
+    '''
+    Put the datasets in matrix form
+    INPUT: 6 datasets from loaddata
+    OUTPUT: 3 matrixes of paired dataset, each represented in a N x (D + #Class) matrix where each row is [x1, x2, .... xD, y1, y2, ..., y#Class]
+            And the dimension of x^(i) and y^(i), the latter being the number of classes, or 1 if regression
+    '''
     # Pair each x array with its corresponding y array with numpy's concatenate function
     # Note that all if Y = {'True', 'False'}, it will become {0, 1} after this step
     xy_train = np.concatenate([np.transpose(x_train), np.transpose(y_train)]).transpose()
@@ -32,7 +40,6 @@ def loadData(datasetName):
     num_classes = np.shape(y_test)[1]
     num_trainSet = np.shape(x_train)[0]
     return xy_train, xy_valid, xy_test, num_dimension, num_classes, num_trainSet
-
 
 def normalization(x, mean, stddev):
     '''
@@ -67,6 +74,7 @@ def printData(dataset, item = 'both'):
 
 
 if __name__ == '__main__':
-    xy_train, xy_valid, xy_test, num_dimension, num_classes = loadData('mnist_small')
+    x_train, x_valid, x_test, y_train, y_valid, y_test = loadData('mnist_small')
+    xy_train, xy_valid, xy_test, num_dimension, num_classes, num_trainSet = concatenate(x_train, x_valid, x_test, y_train, y_valid, y_test)
     print (num_dimension, num_classes)
     printData(xy_test)
