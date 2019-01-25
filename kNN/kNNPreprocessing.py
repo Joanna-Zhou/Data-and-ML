@@ -30,7 +30,8 @@ def loadData(datasetName):
     xy_test = np.concatenate([np.transpose(x_test), np.transpose(y_test)]).transpose()
     num_dimension = np.shape(x_test)[1]
     num_classes = np.shape(y_test)[1]
-    return xy_train, xy_valid, xy_test, num_dimension, num_classes
+    num_trainSet = np.shape(x_train)[0]
+    return xy_train, xy_valid, xy_test, num_dimension, num_classes, num_trainSet
 
 
 def normalization(x, mean, stddev):
