@@ -1,17 +1,22 @@
 from kNNPreprocessing import *
 
-class kNN_classifier:
+class kNNTraining:
     def __init__(self, datasetName, method = 'l2', k = 1):
+        '''
+        To run kNNTraining, please declare a class with the desired parameters and then call
+        "kNNtest1.kNNRegression(kNNtest1.x_test[i], kNNtest1.y_test[i])" in a loop pf desired i
+        '''
         self.method = method # distance calculation method, 'l1', 'l2', or 'linf'
         self.k = k  # number of nearest neighbours required
 
         # Extraxt datasets associated with the dataset's name
         # x/y_train: the training sets, must be a N-by-D matrix for x_train and N-by-(#Class) for y_train
         self.x_train, self.x_valid, self.x_test, self.y_train, self.y_valid, self.y_test = loadData(datasetName)
-        self.xy_train, self.xy_valid, self.xy_test, self.num_dimension, self.num_classes, self.num_trainSet = concatenate(self.x_train, self.x_valid, self.x_test, self.y_train, self.y_valid, self.y_test)
+        # self.xy_train, self.xy_valid, self.xy_test, self.num_dimension, self.num_classes, self.num_trainSet = concatenate(self.x_train, self.x_valid, self.x_test, self.y_train, self.y_valid, self.y_test)
+        self.num_dimension = np.shape(self.x_test)[1]
+        self.num_trainSet = np.shape(self.x_train)[0]
 
-
-    def kNNClassifier(self, x, y):
+    def kNNClassification(self, x, y):
         '''
         Classify which class this x is in and compare to its actual value
         INOUT: x, y: 1-dimensional vectors, typically a row from x/y_test or x/y_valid
@@ -30,6 +35,29 @@ class kNN_classifier:
         print('Classified in class', list(kNNClass).index(True), '\nResult is', correctness)
         return kNNClass, correctness
 
+
+    def kNNRegression(self, x, y):
+        '''
+        Predict the output value of given x and compare to its actual label y
+        INOUT: x, y: 1-dimensional vectors, typically a row from x/y_test or x/y_valid
+        OUTPUT: kNNClass: a classification result of class y
+                error: error as a percentage
+                correctness: a boolean indicating if the prediction is within a certain boundary of its label
+        '''
+        actualValue = y[0]
+        iNN = self.getNeighbours(x, y)
+        yNN = self.y_train[iNN]
+        # print('Selected', self.k, "nearest neighbours' values:\n", yNN)
+
+        kNNValue = (sum(yNN)/len(yNN))[0]
+        # print('Classified in class', list(kNNClass).index(True), 'and it is actually in class', list(y).index(True))
+
+        error =  abs((kNNValue - actualValue)/actualValue) # Compare to the actual class
+        correctness = (error < 0.25)
+        print('Predicted value is', kNNValue, '\nError is', error*100, '%', 'and considered', correctness)
+        return kNNValue, error, correctness
+
+
     def getNeighbours(self, x, y):
         '''
         Get k nearest neighbours for a given x
@@ -38,7 +66,6 @@ class kNN_classifier:
         '''
         distances = [self.getDistance(self.x_train[i], self.y_train[i], x, y) for i in range(self.num_trainSet)]
         iNN = np.argpartition(distances, range(self.k))[:self.k]
-        print
         return iNN
 
 
@@ -50,7 +77,7 @@ class kNN_classifier:
         OUTPUT: a numeric value of the distance
         '''
         try:
-            # print('Class of x1:', y1, '\nClass of x2:', y2)
+            # print('Label of x1:', y1, '\nLabel of x2:', y2)
             sum_distance = 0 # Initiate the distance
             if self.method == 'l1':
                 for i in range(0, self.num_dimension):
@@ -71,6 +98,13 @@ class kNN_classifier:
 
 
 if __name__ == '__main__':
-    kNNtest1 = kNN_classifier('mnist_small', 'l2', 3)
+    '''
+    kNNtestClass = kNNTraining('iris', 'linf', 3) # iris or mnist_small
     for i in range(10): # This test yielded 9 true predictions and 1 false in 55 seconds
-        kNNtest1.kNNClassifier(kNNtest1.x_test[i], kNNtest1.y_test[i])
+        kNNtestClass.kNNClassification(kNNtestClass.x_test[i], kNNtestClass.y_test[i])
+    '''
+    kNNtestReg = kNNTraining('rosenbrock', 'l2', 10) # mauna_loa, pumadyn32nm or rosenbrock
+    for i in range(0, 5): # This test yielded 9 true predictions and 1 false in 55 seconds
+        # kNNtestReg.kNNRegression(kNNtestReg.x_valid[i], kNNtestReg.y_valid[i])
+        kNNtestReg.kNNRegression(kNNtestReg.x_train[i], kNNtestReg.y_train[i])
+    # '''
