@@ -1,0 +1,13 @@
+import math
+
+from data_utils import load_dataset
+import numpy as np
+
+if __name__ == '__main__':
+    a = np.array([[1, 2, 3, 4, 5],[2, 3, 4, 5, 6]])
+    mean = a.mean(axis=0, keepdims=True)
+    stddev = a.std(axis=0, keepdims=True)
+
+    print(mean, stddev)
+    a = (a-mean)/stddev
+    print(a)

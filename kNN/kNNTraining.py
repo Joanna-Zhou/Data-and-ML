@@ -54,8 +54,9 @@ class kNNTraining:
         kNNValue = (sum(yNN)/len(yNN))[0]
         # print('Classified in class', list(kNNClass).index(True), 'and it is actually in class', list(y).index(True))
 
-        error =  abs((kNNValue - actualValue)/actualValue) # Compare to the actual class
-        correctness = (error < 0.25)
+        error = kNNValue - actualValue # Compare to the actual class
+        percent_error =  abs(error/actualValue) # Compare to the actual class
+        correctness = (percent_error < 0.25)
         # print('Predicted value is', kNNValue, '\nError is', error*100, '%', 'and considered', correctness)
         return kNNValue, error, correctness
 

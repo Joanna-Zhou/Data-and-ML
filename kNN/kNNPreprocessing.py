@@ -22,8 +22,8 @@ def loadData(datasetName, foldIndex):
     y_train, y_valid = foldDataset(y_all, foldIndex)
 
     # Normalizetion of each x data
-    mean = x_train.mean(axis=0, keepdims=True)
-    stddev = x_train.std(axis=0, keepdims=True)
+    mean = x_all.mean(axis=0, keepdims=True)
+    stddev = x_all.std(axis=0, keepdims=True)
     x_train = normalization(x_train, mean, stddev)
     x_valed = normalization(x_valid, mean, stddev)
     x_test = normalization(x_test, mean, stddev)
@@ -98,7 +98,7 @@ def printData(dataset, item = 'both'):
 
 
 if __name__ == '__main__':
-    x_train, x_valid, x_test, y_train, y_valid, y_test = loadData('iris', 5)
+    x_train, x_valid, x_test, y_train, y_valid, y_test = loadData('mauna_loa', 5)
     # xy_train, xy_valid, xy_test, num_dimension, num_classes, num_trainSet = concatenate(x_train, x_valid, x_test, y_train, y_valid, y_test)
     # print (num_dimension, num_classes)
-    # printData(xy_test)
+    printData(y_valid)
