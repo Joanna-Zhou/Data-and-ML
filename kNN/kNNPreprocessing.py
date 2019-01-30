@@ -13,7 +13,7 @@ def loadData(datasetName):
     OUTPUT: 6 datasets in array form, 3 of which are normalized x data
     '''
     if datasetName == 'rosenbrock':
-        x_train, x_valid, x_test, y_train, y_valid, y_test = load_dataset(datasetName, n_train=5000, d=2)
+        x_train, x_valid, x_test, y_train, y_valid, y_test = load_dataset(datasetName, n_train=1000, d=2)
     else:
         x_train, x_valid, x_test, y_train, y_valid, y_test = load_dataset(datasetName)
 

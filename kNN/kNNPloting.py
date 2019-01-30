@@ -76,8 +76,8 @@ def plotValidSet_Regression(datasetName, distanceHeuristic, k, modificationIndex
 
     data = {'x': list(np.transpose(kNNtest.x_valid)[0]), 'y_Labelled': list(np.transpose(kNNtest.y_valid)[0]), 'y_Predicted': y}
     df = pd.DataFrame(data)
-    df.plot(kind='scatter',x='x',y='y_Labelled', ax=plt.gca(), color=_COLORS)
-    df.plot(kind='scatter',x='x',y='y_Predicted', color=_COLORS, ax=plt.gca())
+    df.plot(kind='scatter',x='x',y='y_Labelled', ax=plt.gca())
+    df.plot(kind='scatter',x='x',y='y_Predicted', ax=plt.gca(), color=_COLORS[k%len(_COLORS)])
     plt.style.use('bmh')
     plt.legend(('y_Labelled', 'y_Predicted'))
     plt.title('Predictions of Dataset "%s"\nwith %s Distance and Optimal k = %d -- Validation Set' %(datasetName, distanceHeuristic, k), loc='center', size=12)
@@ -106,7 +106,7 @@ def plotTestSet_Regression(datasetName, distanceHeuristic, k, modificationIndex)
     data = {'x': list(np.transpose(kNNtest.x_test)[0]), 'y_Labelled': list(np.transpose(kNNtest.y_test)[0]), 'y_Predicted': y}
     df = pd.DataFrame(data)
     df.plot(kind='scatter',x='x',y='y_Labelled',ax=plt.gca())
-    df.plot(kind='scatter',x='x',y='y_Predicted', color=_COLORS, ax=plt.gca())
+    df.plot(kind='scatter',x='x',y='y_Predicted', ax=plt.gca(), color=_COLORS[k%len(_COLORS)])
     plt.style.use('bmh')
     plt.legend(('y_Labelled', 'y_Predicted'))
     plt.title('Predictions of Dataset "%s"\nwith %s Distance and Optimal k = %d -- Test Set' %(datasetName, distanceHeuristic, k), loc='center', size=12)
@@ -114,9 +114,9 @@ def plotTestSet_Regression(datasetName, distanceHeuristic, k, modificationIndex)
 
 
 if __name__ == '__main__':
-    print(plotValidPredictionCurves('mauna_loa', 'l2', range(1, 3), 1))
-    print(plotTestPredictionCurves('mauna_loa', 'l2', range(1, 3), 1))
+    print(plotValidPredictionCurves('pumadyn32nm', 'l2', range(1, 31), 3))
+    # print(plotTestPredictionCurves('mauna_loa', 'l2', range(1, 41), 1))
     # for k in range(3, 10):
     #     plotTestSet_Regression('mauna_loa', 'l2', k, 2)
-    # for k in range(3, 10):
+    # for k in range(2, 9):
     #     plotValidSet_Regression('mauna_loa', 'l2', k, 2)

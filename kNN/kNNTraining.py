@@ -30,7 +30,7 @@ class kNNTraining:
                 correctness: a boolean indicating if the prediction is the same as label
         '''
         actualClass = y
-        iNN = self.getNeighbours(x, y)
+        iNN = self.getNeighbours_2(x, y)
         # print('Selected', self.k, "nearest neighbours' classes:\n", self.y_train[iNN])
 
         vote, count = np.unique(self.y_train[iNN], axis=0, return_counts=True) # Find the class holding majority
@@ -66,6 +66,7 @@ class kNNTraining:
         # print('Predicted value is', kNNValue, '\nError is', error*100, '%', 'and considered', correctness)
         return kNNValue, error, correctness
 
+
     def kNNRegression_3(self, x_set, y_set):
         '''
         Predict the output values of ALL x's and compare to their actual label y's -- fully vectorized
@@ -84,7 +85,6 @@ class kNNTraining:
 
         errorList = kNNValues - y_set # Compare to the actual value
         return kNNValues, errorList # Both should be arrays
-
 
 
     def getNeighbours_2(self, x, y):

@@ -34,6 +34,7 @@ if __name__ == '__main__':
     # print(y_test - kNNValue)
 
     tree = KDTree(x_train, leaf_size=2)
-    dist, ind = tree.query(x_test, k=2)
+    distances, iNN = tree.query(x_test, k=2)
+
     print(ind)  # indices of 3 closest neighbors
     print(dist)  # distances to 3 closest neighbors
