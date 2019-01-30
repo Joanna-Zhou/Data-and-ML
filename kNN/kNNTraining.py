@@ -1,7 +1,7 @@
 from kNNPreprocessing import *
 
 class kNNTraining:
-    def __init__(self, datasetName, distanceHeuristic='l2', k=3, modificationIndex=1):
+    def __init__(self, datasetName, distanceHeuristic='l2', k=3, modificationIndex=1, d=2):
         '''
         To run kNNTraining, please declare a class with the desired parameters and then call
         "kNNtest1.kNNRegression(kNNtest1.x_test[i], kNNtest1.y_test[i])" in a loop pf desired i
@@ -12,7 +12,7 @@ class kNNTraining:
 
         # Extraxt datasets associated with the dataset's name
         # x/y_train: the training sets, must be a N-by-D matrix for x_train and N-by-(#Class) for y_train
-        self.index_all, self.x_all, self.x_test, self.y_all, self.y_test = loadData(datasetName)
+        self.index_all, self.x_all, self.x_test, self.y_all, self.y_test = loadData(datasetName, d)
         self.num_dimension = np.shape(self.x_test)[1]
         self.num_validSet = round(np.shape(self.x_all)[0]/5)
         self.num_trainSet = np.shape(self.x_all)[0] - self.num_validSet

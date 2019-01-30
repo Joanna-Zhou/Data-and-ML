@@ -6,14 +6,14 @@ import numpy as np
 import random
 
 
-def loadData(datasetName):
+def loadData(datasetName, d=2):
     '''
     Loads the dataset and normalize the x_ sets
     INPUT: datasetName: a string of the name of file to be loaded. Note that this file must be in the same path as this file
     OUTPUT: 6 datasets in array form, 3 of which are normalized x data
     '''
     if datasetName == 'rosenbrock':
-        x_train, x_valid, x_test, y_train, y_valid, y_test = load_dataset(datasetName, n_train=1000, d=2)
+        x_train, x_valid, x_test, y_train, y_valid, y_test = load_dataset(datasetName, n_train=1000, d=d)
     else:
         x_train, x_valid, x_test, y_train, y_valid, y_test = load_dataset(datasetName)
 
