@@ -60,9 +60,9 @@ def RMSELoss_Regression(datasetName, set, distanceHeuristic='l2', k=3, modificat
             for i in range(kNNtest.num_testSet):
                 kNNValue, error, correctness = kNNtest.kNNRegression(kNNtest.x_test[i], kNNtest.y_test[i], kNNtest.modificationIndex)
                 errorList.append(error)
-                # print(kNNtest.y_valid[i], kNNValue)
         elif modificationIndex == 3:
-            kNNValue, errorList = kNNtest.kNNRegression_3(kNNtest.x_test, kNNtest.y_test)
+            kNNValues, errorList = kNNtest.kNNRegression_3(kNNtest.x_test, kNNtest.y_test)
+            print(kNNtest.y_test - kNNValues)
         rmseValues.append(np.sqrt(pow(np.array(errorList), 2).mean()))
     print('::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::')
     return np.mean(rmseValues)
@@ -77,6 +77,7 @@ def RMSELoss_Classification(datasetName, set, distanceHeuristic, k):
     INPUT: k: number of nearest neighbours required
     OUTPUT: a value of the RMSE loss
     '''
+    np.random.seed(20192019)
     print('::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::')
     print(k, 'nearest neighbours using', distanceHeuristic, 'distance:')
     kNNtest = kNNTraining(datasetName, distanceHeuristic, k)
@@ -106,14 +107,14 @@ def RMSELoss_Classification(datasetName, set, distanceHeuristic, k):
 if __name__ == '__main__':
     # '''
     # RMSELoss_Regression('mauna_loa', 'l2', 2, 3)
-    dict_all = {}
+    dictall = {}
     # dict_all['mauna_loa'] = RMSEComparison('mauna_loa', 'regression', 'test', range(1, 11))
-    # dict_all['pumadyn32nm'] = RMSEComparison('pumadyn32nm', 'regression', range(20, 30))
-    # dict_all['rosenbrock'] = RMSEComparison('rosenbrock', 'regression', range(1, 11))
-    # print(dict_all)
+    # dict_all['pumadyn32nm'] = RMSEComparison('pumadyn32nm', 'regression', 'test',range(20, 30))
+    dict_all['rosenbrock'] = RMSEComparison('rosenbrock', 'regression', 'test', range(1, 3))
+    print(dict_all)
     # RMSELoss_Classification('iris', 'l2', 3)
 
     # dict_all = {}
-    dict_all['iris'] = RMSEComparison('iris', 'classification', 'test', range(1, 21))
-    dict_all['mnist_small'] = RMSEComparison('mnist_small', 'classification', 'test', range(1, 6))
+    # dict_all['iris'] = RMSEComparison('iris', 'classification', 'test', range(1, 21))
+    # dict_all['mnist_small'] = RMSEComparison('mnist_small', 'classification', 'test', range(1, 6))
     print(dict_all)

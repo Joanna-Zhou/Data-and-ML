@@ -104,4 +104,4 @@ if __name__ == '__main__':
     # xy_train, xy_valid, xy_test, num_dimension, num_classes, num_trainSet = concatenate(x_train, x_valid, x_test, y_train, y_valid, y_test)
     # print (num_dimension, num_classes)
     x_train, x_valid, y_train, y_valid = foldDataset(index_all, x_all, y_all, 5)
-    printData(y_valid)
+    printData(x_train.shape)
