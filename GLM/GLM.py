@@ -2,29 +2,74 @@ from data_utils import load_dataset
 import matplotlib.pyplot as plt
 import math
 import numpy as np
+from sympy.matrices import GramSchmidt
 from numpy import dot
 import pandas as pd # Only for formatting and plotting
 
+from Kernels import *
+from BasisFunctions import *
+
 _COLORS = ['#d6616b', '#e6550d', '#fdae6b', '#e7ba52', '#dbdb8d']
 
-class MaunaLoa:
-    def __init__(self):
+class GLM:
+    def __init__(self, datasetName):
         '''
         Load dataset mauna_loa
         '''
-        self.x_train, self.x_valid, self.x_test, self.y_train, self.y_valid, self.y_test = load_dataset('mauna_loa')
+        self.dataset = datasetName
+        if datasetName == 'rosenbrock':
+            self.x_train, self.x_valid, self.x_test, self.y_train, self.y_valid, self.y_test =  load_dataset(datasetName, n_train=1000, d=2)
+        else:
+            self.x_train, self.x_valid, self.x_test, self.y_train, self.y_valid, self.y_test = load_dataset(datasetName)
         self.dimension = np.shape(self.x_test)[1]
         self.num_trainSet = np.shape(self.x_train)[0]
         self.num_validSet = np.shape(self.x_valid)[0]
         self.num_testSet = np.shape(self.x_test)[0]
 
-    def setParameters(self, M, lamb, model):
+
+    def initCrossValidation(self):
+        '''
+        Combine the training and validation set together for the splitting in cross-validation
+        '''
+        self.x_all = np.concatenate([self.x_train, self.x_valid])
+        self.y_all = np.concatenate([self.y_train, self.y_valid])
+        self.index_all = list(range(np.shape(self.x_all)[0]))
+        np.random.seed(99)
+        np.random.shuffle(self.index_all)
+
+        self.num_validSet = round(np.shape(self.x_all)[0]/5)
+        self.num_trainSet = np.shape(self.x_all)[0] - self.num_validSet
+
+
+    def splitCrossValidation(self, foldIndex):
+        '''
+        Split data into two sets of ratio 4:1 according to the foldIndex
+        INPUT: allData: concatenate dataset
+        INPUT: foldIndex: from 1 to 5, decides how to partition the dataset (must be from outside the class)
+        OUTPUT: train, set: the 4:1 ratio datasets
+        '''
+        total = len(self.index_all)
+        oneFifth = round(total/5)
+        if foldIndex in [1, 2, 3, 4]:
+            index_train = self.index_all[:oneFifth*(foldIndex-1)] + self.index_all[oneFifth*foldIndex:]
+            index_valid = self.index_all[oneFifth*(foldIndex-1) : oneFifth*foldIndex]
+        elif foldIndex == 5: # for the last fold, cound backwards so that it has the same number of data as the other folds
+            index_train = self.index_all[:(total-oneFifth)]
+            index_valid = self.index_all[(total-oneFifth):]
+        self.x_train, self.x_valid = self.x_all[index_train], self.x_all[index_valid]
+        self.y_train, self.y_valid = self.y_all[index_train], self.y_all[index_valid]
+
+
+    def setParameters(self, method='basisfunc', model='polynomial', lamb=0, M=100, theta=0.1, degree=2):
         '''
         Set the parameters that requires tuning here as class attributes
         '''
-        self.M = M
-        self.lamb = lamb
+        self.method = method
         self.model = model
+        self.lamb = lamb
+        self.M = M
+        self.theta = theta
+        self.degree = degree
 
 
     def normalization(self, x_set):
@@ -36,71 +81,80 @@ class MaunaLoa:
         return (x_set - mean)/stddev
 
 
-    def getPhi(self, x):
+    def getPrediction(self, x_set, y_set):
         '''
-        Returns a row vector [phi_0(x) phi_1(x) ... phi_{M-1}(x)]
-        INPUT x: a column vector of length = self.dimension. In this case of mauna_loa, just a scalar
-        INPUT M: dimension of the output row vector
-        INPUT: model: basis function models, such as 'polynomial', 'gaussian', 'fourier'
+        Pass in the datasets and output the prediction set and rmse
         '''
-        row = [1] # phi_0 is always 1
-        if self.model == 'gaussian': s = (max(self.x_train)-min(self.x_train))/(self.M-2)
-        for i in range(1, self.M):
-            if self.model == 'polynomial':
-                phi_i = pow(x, i)
-            if self.model == 'gaussian':
-                mu_i = min(self.x_train) + (i-1)*s
-                phi_i = math.exp(-pow((x-mu_i), 2)/(2*pow(s, 2)))
-            row.append(phi_i)
-        return row
+        if self.method == 'basisfunc':
+            method = BasisFunctions(self.model, self.lamb, self.M, self.degree)
+            method.getWeight(self.x_train, self.y_train)
+            self.w, self.phiMatrix = method.w, method.phiMatrix
+            y_predicted = method.getPhiMatrix(x_set).dot(method.w)
+
+        elif self.method == 'kernel':
+            method = Kernels(self.M, self.model, self.lamb, self.theta, self.degree)
+            method.getAlpha(self.x_train, self.y_train)
+            self.w, self.K = method.w, method.K
+            y_predicted = method.getGram(self.x_train, x_set).T.dot(method.alpha)
+
+        rmse = np.sqrt(pow(np.array(y_predicted-y_set), 2).mean())
+        return y_predicted, rmse
 
 
-    def getPhiMatrix(self, set):
-        return np.array([self.getPhi(x) for x in set])
-
-
-    def getWeight(self):
+    def runRegression(self, set):
         '''
-        Uses the economic SVD method to compute vector w for f(X, w) = phiMatrix * w
-        MUST call getWeight before any testing, since self.w is defined in this function
-        OUTPUT: w = V()
+        Show and return the prediction results
+        INPUT: set: can be one of 'cross-validation', 'validation', 'test', or 'train'
         '''
-        self.phiMatrix = self.getPhiMatrix(self.x_train)
-        U, s, VT = np.linalg.svd(self.phiMatrix, full_matrices=False) # The economy SVD (if want full SVD, change the second parameter to True)
-        S = np.zeros((U.shape[1], VT.shape[0]))
-        S[:VT.shape[0], :VT.shape[0]] = np.diag(s)
-        ST, V, UT = S.T, VT.T, U.T
-        lambI = np.identity(U.shape[1]) * self.lamb
-
-        w = V.dot(np.linalg.inv(ST.dot(S)+lambI)).dot(ST).dot(UT).dot(self.y_train)
-        self.w = w
-
-
-    def plotRegression(self, set, M=1, lamb =1, model='polynomial'):
-
-        if set == 'validation ':
-            x, y_actual = self.x_valid, self.y_valid
+        if set == 'cross-validation':
+            X, Y_actual, Y_predicted, RMSE = np.array([[None]]), np.array([[None]]), np.array([[None]]), 0
+            self.initCrossValidation()
+            for foldIndex in range(1, 6):
+                self.splitCrossValidation(foldIndex)
+                x, y_actual = self.x_valid, self.y_valid
+                X = np.concatenate((X, x))
+                Y_actual = np.concatenate((Y_actual, y_actual))
+                y_predicted, rmse = self.getPrediction(x, y_actual)
+                Y_predicted = np.concatenate((Y_predicted, y_predicted))
+                RMSE += rmse/5.
+        elif set == 'validation':
+            X, Y_actual = self.x_valid, self.y_valid
+            Y_predicted, RMSE = self.getPrediction(X, Y_actual)
         elif set == 'test':
-            x, y_actual = self.x_test, self.y_test
+            X, Y_actual = self.x_test, self.y_test
+            Y_predicted, RMSE = self.getPrediction(X, Y_actual)
         elif set == 'train':
-            x, y_actual = self.x_train, self.y_train
-        self.getWeight()
-        y_predicted = self.getPhiMatrix(x).dot(self.w)
-        rmse = np.sqrt(pow(np.array(y_predicted-y_actual), 2).mean())
-        # print('RMSE is', rmse, 'for data', self.dataset, 'with linear regression on the', set, 'set.')
+            X, Y_actual = self.x_train, self.y_train
+            Y_predicted, RMSE = self.getPrediction(X, Y_actual)
 
         plt.style.use('bmh')
-        plt.scatter(x[:, 0], y_actual[:, 0])
-        plt.plot(x[:, 0], y_predicted[:, 0], color='red')
-        plt.title('GLM on the %s set of "mauna_loa" \n Resulting rmse = %1.4f' %(set, rmse), loc='center', size=12)
+        plt.scatter(X[:, 0], Y_actual[:, 0], s=2, color=_COLORS[2])
+        plt.scatter(X[:, 0], Y_predicted[:, 0], s=2, color=_COLORS[0])
+        plt.legend(('Training', 'Prediction'))
+        # plt.plot(X[:, 0], Y_predicted[:, 0], linewidth=1, color=_COLORS[0])
+        plt.title('GLM on the %s set of "%s" with %s\n Resulting rmse = %1.4f' %(set, self.dataset, self.method, RMSE), loc='center', size=12)
         plt.show()
+        return RMSE
 
 
 
-if __name__ == '__main__':
-    Q1 = MaunaLoa()
-    Q1.setParameters(M=100, lamb=0, model='gaussian')
-    Q1.plotRegression('validation')
+def Q1():
+    Q1 = GLM('mauna_loa')
+    # Q1.setParameters(method='basisfunc', model='polynomial', lamb=0, degree=5)
+    Q1.setParameters(method='basisfunc', model='gaussian', lamb=0, M=100)
+    # Q1.runRegression('cross-validation')
+    Q1.runRegression('train')
+
     print(Q1.x_train)
     print('phiMatrix:', Q1.phiMatrix)
     print('w:', Q1.w)
+
+def Q2():
+    Q2 = GLM('mauna_loa')
+    print(Q2.x_train.shape, Q2.x_test.shape)
+    Q2.setParameters(method='kernel', model='gaussian', lamb=0.0001, M=100, theta=0.1, degree=2)
+    Q2.runRegression('cross-validation')
+
+
+if __name__ == '__main__':
+    Q1()
