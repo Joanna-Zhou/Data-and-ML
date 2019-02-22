@@ -86,7 +86,7 @@ class GLM:
         Pass in the datasets and output the prediction set and rmse
         '''
         if self.method == 'basisfunc':
-            method = BasisFunctions(self.model, self.lamb, self.M, self.degree)
+            method = BasisFunctions(self.x_train, self.model, self.lamb, self.M, self.degree)
             method.getWeight(self.x_train, self.y_train)
             self.w, self.phiMatrix = method.w, method.phiMatrix
             y_predicted = method.getPhiMatrix(x_set).dot(method.w)
@@ -94,7 +94,7 @@ class GLM:
         elif self.method == 'kernel':
             method = Kernels(self.M, self.model, self.lamb, self.theta, self.degree)
             method.getAlpha(self.x_train, self.y_train)
-            self.w, self.K = method.w, method.K
+            self.alpha, self.K = method.alpha, method.K
             y_predicted = method.getGram(self.x_train, x_set).T.dot(method.alpha)
 
         rmse = np.sqrt(pow(np.array(y_predicted-y_set), 2).mean())
@@ -117,44 +117,107 @@ class GLM:
                 y_predicted, rmse = self.getPrediction(x, y_actual)
                 Y_predicted = np.concatenate((Y_predicted, y_predicted))
                 RMSE += rmse/5.
+            markersize = 2
         elif set == 'validation':
             X, Y_actual = self.x_valid, self.y_valid
             Y_predicted, RMSE = self.getPrediction(X, Y_actual)
+            markersize = 20
         elif set == 'test':
             X, Y_actual = self.x_test, self.y_test
             Y_predicted, RMSE = self.getPrediction(X, Y_actual)
+            markersize = 20
         elif set == 'train':
             X, Y_actual = self.x_train, self.y_train
             Y_predicted, RMSE = self.getPrediction(X, Y_actual)
+            markersize = 2
 
         plt.style.use('bmh')
-        plt.scatter(X[:, 0], Y_actual[:, 0], s=2, color=_COLORS[2])
-        plt.scatter(X[:, 0], Y_predicted[:, 0], s=2, color=_COLORS[0])
-        plt.legend(('Training', 'Prediction'))
+        plt.scatter(X[:, 0], Y_actual[:, 0], s=markersize, color=_COLORS[2])
+        plt.scatter(X[:, 0], Y_predicted[:, 0], marker = '*', s=markersize, color=_COLORS[0])
+        plt.legend(('Actual', 'Prediction'))
         # plt.plot(X[:, 0], Y_predicted[:, 0], linewidth=1, color=_COLORS[0])
         plt.title('GLM on the %s set of "%s" with %s\n Resulting rmse = %1.4f' %(set, self.dataset, self.method, RMSE), loc='center', size=12)
         plt.show()
         return RMSE
 
 
+    def runClassification(self, set):
+        '''
+        Show and return the prediction results
+        INPUT: set: can be one of 'cross-validation', 'validation', 'test', or 'train'
+        '''
+        if set == 'cross-validation':
+            X, Y_actual, Y_predicted, RMSE = np.array([[None]]), np.array([[None]]), np.array([[None]]), 0
+            self.initCrossValidation()
+            for foldIndex in range(1, 6):
+                self.splitCrossValidation(foldIndex)
+                x, y_actual = self.x_valid, self.y_valid
+                X = np.concatenate((X, x))
+                Y_actual = np.concatenate((Y_actual, y_actual))
+                y_predicted, rmse = self.getPrediction(x, y_actual)
+                Y_predicted = np.concatenate((Y_predicted, y_predicted))
+                RMSE += rmse/5.
+            markersize = 2
+        elif set == 'validation':
+            X, Y_actual = self.x_valid, self.y_valid
+            Y_predicted, RMSE = self.getPrediction(X, Y_actual)
+            markersize = 20
+        elif set == 'test':
+            X, Y_actual = self.x_test, self.y_test
+            Y_predicted, RMSE = self.getPrediction(X, Y_actual)
+            markersize = 20
+        elif set == 'train':
+            X, Y_actual = self.x_train, self.y_train
+            Y_predicted, RMSE = self.getPrediction(X, Y_actual)
+            markersize = 2
+
+        class_predicted = []
+        num_classes = np.shape(self.y_test)[1]
+        for y in Y_predicted:
+            maxClass = list(y).index(max(y))
+            class_base = np.zeros(num_classes)
+            class_base[maxClass] = 1
+            class_predicted.append(class_base)
+
+        # plt.style.use('bmh')
+        # plt.scatter(X[:, 0], Y_actual[:, 0], s=markersize, color=_COLORS[2])
+        # plt.scatter(X[:, 0], Y_predicted[:, 0], marker = '*', s=markersize, color=_COLORS[0])
+        # plt.legend(('Actual', 'Prediction'))
+        # plt.show()
+
+        accuracies = [sum(list(class_predicted)[i]!=list(Y_actual)[i])/2 for i in range(np.shape(class_predicted)[0])]
+        accuracy = 1-sum(accuracies)/len(accuracies)
+        print('Accuracy is', str(accuracy*100)+'% for data', self.dataset, 'on the', set, 'set.')
+        return accuracy
+
+
 
 def Q1():
     Q1 = GLM('mauna_loa')
     # Q1.setParameters(method='basisfunc', model='polynomial', lamb=0, degree=5)
-    Q1.setParameters(method='basisfunc', model='gaussian', lamb=0, M=100)
+    # Q1.setParameters(method='basisfunc', model='gaussian', lamb=0, M=10)
+    Q1.setParameters(method='basisfunc', model='DIY', lamb=0)
     # Q1.runRegression('cross-validation')
-    Q1.runRegression('train')
+    Q1.runRegression('test')
 
-    print(Q1.x_train)
-    print('phiMatrix:', Q1.phiMatrix)
+    # print(Q1.x_train)
+    # print('phiMatrix:', Q1.phiMatrix)
     print('w:', Q1.w)
 
 def Q2():
     Q2 = GLM('mauna_loa')
     print(Q2.x_train.shape, Q2.x_test.shape)
-    Q2.setParameters(method='kernel', model='gaussian', lamb=0.0001, M=100, theta=0.1, degree=2)
-    Q2.runRegression('cross-validation')
+    Q2.setParameters(method='kernel', model='gaussian', lamb=1e-10, M=100, theta=1, degree=5)
+    Q2.runRegression('test')
 
+def Q3():
+    # Q3 = GLM('rosenbrock')
+    # print(Q2.x_train.shape, Q2.x_test.shape)
+    # Q3.setParameters(method='kernel', model='gaussian', lamb=1e-10, M=100, theta=0.1, degree=5)
+    # Q3.runRegression('test')
+    Q3 = GLM('iris')
+    Q3.setParameters(method='kernel', model='gaussian', lamb=1e-10, M=100, theta=0.1, degree=5)
+    Q3.runClassification('test')
 
 if __name__ == '__main__':
-    Q1()
+    Q3()

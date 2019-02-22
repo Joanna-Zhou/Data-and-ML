@@ -3,7 +3,8 @@ import numpy as np
 from numpy import dot
 
 class BasisFunctions:
-    def __init__(self, model='gaussian', lamb=0, M=3, degree=5):
+    def __init__(self, x_train, model='gaussian', lamb=0, M=3, degree=5):
+        self.x_train = x_train
         self.model = model
         self.lamb = lamb
         self.M = M
@@ -17,17 +18,33 @@ class BasisFunctions:
         INPUT: model: basis function models, such as 'polynomial', 'gaussian', 'fourier'
         '''
         row = [1] # phi_0 is always 1
-        if self.model == 'gaussian': s = (max(set)-min(set))/(self.M-2)
-
-        for i in range(1, self.degree):
-            if self.model == 'polynomial':
-                phi_i = pow(x, i)
-
-            if self.model == 'gaussian':
-                mu_i = min(set) + (i-1)*s
+        if self.model == 'gaussian':
+            s = (max(self.x_train)-min(self.x_train))/(self.M-2)
+            for i in range(1, self.M):
+                mu_i = min(self.x_train) + (i-1)*s
                 phi_i = math.exp(-pow((x-mu_i), 2)/(2*pow(s, 2)))
+                row.append(phi_i)
 
-            row.append(phi_i)
+        if self.model == 'polynomial':
+            for i in range(1, self.degree):
+                phi_i = pow(x, i)
+                row.append(phi_i)
+
+        if self.model == 'fourier':
+            period = math.floor((self.M-1)/2)
+            omega = 2*math.pi/period
+            for i in range(1, period):
+                phi_i_cos, phi_i_sin = math.cos(omega*i*x), math.sin(omega*i*x)
+                row.append(phi_i_cos)
+                row.append(phi_i_sin)
+
+        if self.model == 'DIY':
+            period = 0.057
+            row.append(x)
+            row.append(x**2)
+            row.append(x**3)
+            row.append(-math.sin(x*2*math.pi/period))
+            row.append(-math.cos(x*2*math.pi/period))
         return row
 
 
@@ -50,3 +67,12 @@ class BasisFunctions:
 
         w = V.dot(np.linalg.inv(ST.dot(S)+lambI)).dot(ST).dot(UT).dot(y_train)
         self.w = w
+
+
+# x_train = np.array([[1], [3], [4]])
+# # print(math.cos(2*2*math.pi/4))
+# print(x_train)
+# # x_train = np.array([[1], [2], [3]])
+# method = BasisFunctions(x_train, 'fourier', M=10)
+# phiMatrix = method.getPhiMatrix(x_train)
+# print(phiMatrix)
