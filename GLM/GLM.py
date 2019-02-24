@@ -41,6 +41,15 @@ class GLM:
         self.num_trainSet = np.shape(self.x_all)[0] - self.num_validSet
 
 
+    def initTest(self):
+        '''
+        Combine the training and validation set together as a whole training set for testing
+        '''
+        self.x_train = np.concatenate([self.x_train, self.x_valid])
+        self.y_train = np.concatenate([self.y_train, self.y_valid])
+        self.num_trainSet = np.shape(self.x_train)[0]
+
+
     def splitCrossValidation(self, foldIndex):
         '''
         Split data into two sets of ratio 4:1 according to the foldIndex
@@ -123,6 +132,7 @@ class GLM:
             Y_predicted, RMSE = self.getPrediction(X, Y_actual)
             markersize = 20
         elif set == 'test':
+            self.initTest()
             X, Y_actual = self.x_test, self.y_test
             Y_predicted, RMSE = self.getPrediction(X, Y_actual)
             markersize = 20
@@ -193,12 +203,13 @@ class GLM:
 
 
 def Q1():
-    Q1 = GLM('mauna_loa')
+    glm = GLM('mauna_loa')
     # Q1.setParameters(method='basisfunc', model='polynomial', lamb=0, degree=5)
     # Q1.setParameters(method='basisfunc', model='gaussian', lamb=0, M=10)
-    Q1.setParameters(method='basisfunc', model='DIY', lamb=0)
+    glm.setParameters(method='basisfunc', model='DIY', lamb=1e-6, degree=4)
     # Q1.runRegression('cross-validation')
-    Q1.runRegression('test')
+    # glm.runRegression('validation')
+    glm.runRegression('test')
 
     # print(Q1.x_train)
     # print('phiMatrix:', Q1.phiMatrix)
@@ -207,17 +218,32 @@ def Q1():
 def Q2():
     Q2 = GLM('mauna_loa')
     print(Q2.x_train.shape, Q2.x_test.shape)
-    Q2.setParameters(method='kernel', model='gaussian', lamb=1e-10, M=100, theta=1, degree=5)
-    Q2.runRegression('test')
+    Q2.setParameters(method='kernel', model='DIY', lamb=280, degree=4)
+    Q2.runRegression('train')
 
 def Q3():
-    # Q3 = GLM('rosenbrock')
-    # print(Q2.x_train.shape, Q2.x_test.shape)
-    # Q3.setParameters(method='kernel', model='gaussian', lamb=1e-10, M=100, theta=0.1, degree=5)
-    # Q3.runRegression('test')
-    Q3 = GLM('iris')
-    Q3.setParameters(method='kernel', model='gaussian', lamb=1e-10, M=100, theta=0.1, degree=5)
-    Q3.runClassification('test')
+    # _THETA = [0.05, 0.1, 0.5, 1, 2]
+    # _LAMB = [0.001, 0.01, 0.1, 1]
+    # _DATASET = [('mauna_loa', 'regression'), ('rosenbrock', 'regression'), ('iris', 'classification')]
+    _THETA = [0.05]
+    _LAMB = [0.001]
+    _DATASET = [('mauna_loa', 'regression'), ('rosenbrock', 'regression'), ('iris', 'classification')]
+    RMSE = {}
+    for (dataset, task) in _DATASET:
+        print('Processing dataset', dataset, '...')
+        RMSE[dataset] = {}
+        glm = GLM(dataset)
+        for theta in _THETA:
+            RMSE[dataset][theta] = {}
+            for lamb in _LAMB:
+                glm.setParameters(method='kernel', model='gaussian', lamb=lamb, theta=theta)
+                if task == 'regression':
+                    RMSE[dataset][theta][lamb] = glm.runRegression('test')
+                elif task == 'classification':
+                    RMSE[dataset][theta][lamb] = glm.runClassification('test')
+    RMSE_mauna_loa, RMSE_rosenbrock, RMSE_iris = pd.DataFrame(RMSE['mauna_loa']), pd.DataFrame(RMSE['rosenbrock']), pd.DataFrame(RMSE['iris'])
+    return RMSE_mauna_loa, RMSE_rosenbrock, RMSE_iris
+
 
 if __name__ == '__main__':
-    Q3()
+    Q1()

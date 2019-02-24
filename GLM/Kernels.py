@@ -20,7 +20,7 @@ class Kernels:
     def getGram_Gaussian(self, set1, set2):
         '''
         Calculates the Gram matrix constructed by gaussian kernel k(x,z) = exp(-abs(x-z)^2/theta)
-        INPUT: set1 and set2 are N-by-D and M-by-D matrices
+        INPUT: set1 and set2 are N-by-D and N'-by-D matrices
         '''
         # K = np.exp(-np.square(set1-np.transpose(set2))/self.theta) # For D=1
         # pairwise_dists = squareform(pdist(set1, 'euclidean'))
@@ -32,7 +32,7 @@ class Kernels:
     def getGram_Linear(self, set1, set2):
         '''
         Calculates the Gram matrix constructed by linear kernel k(x,z) = x.T * z
-        INPUT: set1 and se2 are N-by-D and M-by-D matrices
+        INPUT: set1 and se2 are N-by-D and N'-by-D matrices
         '''
         K = set1.dot(set2.T)
         return K
@@ -41,7 +41,7 @@ class Kernels:
     def getGram_Polynomial(self, set1, set2):
         '''
         Calculates the Gram matrix constructed by linear kernel k(x,z) = (x.T * z + 1)^d
-        INPUT: set1 and set2 are N-by-D and M-by-D matrices
+        INPUT: set1 and set2 are N-by-D and N'-by-D matrices
         '''
         N, M = set1.shape[0], set2.shape[0]
         base = set1.dot(set2.T) + 1 #np.ones((N, M))
@@ -49,15 +49,32 @@ class Kernels:
         return K
 
 
+    def getGram_Sinusoid(self, set1, set2):
+        '''
+        Calculates the Gram matrix constructed by gaussian kernel k(x,z) = cos(wx)*cos(wz) + sin(wx)*sin(wz) = cos(w(x-z))
+        INPUT: set1 and set2 are N-by-D and N'-by-D matrices
+        '''
+        period = 0.057
+        K = -np.cos((set1-set2.T)*2*math.pi/period)
+        return K
+
+
+    def getGram_DIY(self, set1, set2):
+        '''
+        Combines polynomial kernel and sinusoidal kernel, to translate the DIY basis function
+        INPUT: set1 and set2 are N-by-D and N'-by-D matrices
+        '''
+        return self.getGram_Polynomial(set1, set2) + self.getGram_Sinusoid(set1, set2)
+
+
     def getGram(self, set1, set2):
         if self.model == 'gaussian':
             K = self.getGram_Gaussian(set1, set2)
-        elif self.model == 'linear':
-            K = self.getGram_Linear(set1, set2)
         elif self.model == 'polynomial':
             K = self.getGram_Polynomial(set1, set2)
-
-        print('Gram Matrix:\n', K)
+        elif self.model == 'DIY':
+            K = self.getGram_DIY(set1, set2)
+        # print('Gram Matrix:\n', K)
         return K
 
 
@@ -77,6 +94,7 @@ class Kernels:
         # print(alpha)
         self.alpha = alpha
 
+
     def kernelVisualization(self):
         '''
         Plot k(0, z) and k(1, z+1) where z ranges from -0.1 to 1
@@ -92,10 +110,13 @@ class Kernels:
         # plt.plot(X[:, 0], Y_predicted[:, 0], linewidth=1, color=_COLORS[0])
         plt.title('Kernel Visualization -- %s'%(self.model), loc='center', size=12)
         plt.show()
-
-# x_train = np.array([[1, 2], [2, 3], [3, 4]])
-# z_train = np.array([[1, 2], [2, 3]])
-# # x_train = np.array([[1], [2], [3]])
+#
+# import numpy as np
+# x_train = np.array([[1], [2], [3]])
+# zz_train = np.array([[3], [2], [2]])
+# z_train = np.array([[1], [2]])
+# print(np.array(x_train-z_train.T))
+# x_train = np.array([[1], [2], [3]])
 # method = Kernels(M=3, model='gaussian', lamb=0.005, theta=0.0001, degree=10)
 # method.kernelVisualization()
 # method.getGram(x_train, x_train)

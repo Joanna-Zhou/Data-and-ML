@@ -3,7 +3,7 @@ import numpy as np
 from numpy import dot
 
 class BasisFunctions:
-    def __init__(self, x_train, model='gaussian', lamb=0, M=3, degree=5):
+    def __init__(self, x_train, model='gaussian', lamb=0, M=3, degree=4):
         self.x_train = x_train
         self.model = model
         self.lamb = lamb
@@ -40,9 +40,8 @@ class BasisFunctions:
 
         if self.model == 'DIY':
             period = 0.057
-            row.append(x)
-            row.append(x**2)
-            row.append(x**3)
+            for d in range(1, self.degree+1):
+                row.append(x**d)
             row.append(-math.sin(x*2*math.pi/period))
             row.append(-math.cos(x*2*math.pi/period))
         return row
