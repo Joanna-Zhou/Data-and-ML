@@ -1,0 +1,27 @@
+from data_utils import load_dataset
+import numpy as np
+import scipy as sp
+import pandas as pd
+from numpy import dot
+import matplotlib.pyplot as plt
+
+
+def lossFunction(w, x_set, y_set):
+      '''
+      Function of column vector w, loss function for least square error
+      Output: scaler value of loss
+      '''
+      return (y_set - x_set.dot(w)).T.dot(y_set - x_set.dot(w))
+
+def getGradient(w, x_set, y_set):
+    '''
+    Derivative/gradient of column vector w, loss function for least square error
+    Output: vector, the gradient
+    '''
+    return (x_set).T.dot(x_set.dot(w) - y_set)
+
+w = np.array([[1], [2]])
+x = np.array([[3, 2], [4, 1]])
+y = np.array([[8], [6]])
+print(x.dot(w))
+print(getGradient(w, x, y))
