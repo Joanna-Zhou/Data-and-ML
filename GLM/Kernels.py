@@ -55,7 +55,7 @@ class Kernels:
         INPUT: set1 and set2 are N-by-D and N'-by-D matrices
         '''
         period = 0.057
-        K = -np.cos((set1-set2.T)*2*math.pi/period)
+        K = np.cos((set1-set2.T)*2*math.pi/period)
         return K
 
 

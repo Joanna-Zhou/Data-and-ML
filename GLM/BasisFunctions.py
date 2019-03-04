@@ -30,14 +30,6 @@ class BasisFunctions:
                 phi_i = pow(x, i)
                 row.append(phi_i)
 
-        if self.model == 'fourier':
-            period = math.floor((self.M-1)/2)
-            omega = 2*math.pi/period
-            for i in range(1, period):
-                phi_i_cos, phi_i_sin = math.cos(omega*i*x), math.sin(omega*i*x)
-                row.append(phi_i_cos)
-                row.append(phi_i_sin)
-
         if self.model == 'DIY':
             period = 0.057
             for d in range(1, self.degree+1):

@@ -76,6 +76,7 @@ class GLM:
         self.method = method
         self.model = model
         self.lamb = lamb
+        print(lamb)
         self.M = M
         self.theta = theta
         self.degree = degree
@@ -110,7 +111,7 @@ class GLM:
         return y_predicted, rmse
 
 
-    def runRegression(self, set):
+    def runRegression(self, set, graph='on'):
         '''
         Show and return the prediction results
         INPUT: set: can be one of 'cross-validation', 'validation', 'test', or 'train'
@@ -141,13 +142,14 @@ class GLM:
             Y_predicted, RMSE = self.getPrediction(X, Y_actual)
             markersize = 2
 
-        plt.style.use('bmh')
-        plt.scatter(X[:, 0], Y_actual[:, 0], s=markersize, color=_COLORS[2])
-        plt.scatter(X[:, 0], Y_predicted[:, 0], marker = '*', s=markersize, color=_COLORS[0])
-        plt.legend(('Actual', 'Prediction'))
-        # plt.plot(X[:, 0], Y_predicted[:, 0], linewidth=1, color=_COLORS[0])
-        plt.title('GLM on the %s set of "%s" with %s\n Resulting rmse = %1.4f' %(set, self.dataset, self.method, RMSE), loc='center', size=12)
-        plt.show()
+        if graph == 'on':
+            plt.style.use('bmh')
+            plt.scatter(X[:, 0], Y_actual[:, 0], s=markersize, color=_COLORS[2])
+            plt.scatter(X[:, 0], Y_predicted[:, 0], marker = '*', s=markersize, color=_COLORS[0])
+            plt.legend(('Actual', 'Prediction'))
+            # plt.plot(X[:, 0], Y_predicted[:, 0], linewidth=1, color=_COLORS[0])
+            plt.title('GLM on the %s set of "%s" with %s\n Resulting rmse = %1.4f' %(set, self.dataset, self.method, RMSE), loc='center', size=12)
+            plt.show()
         return RMSE
 
 
@@ -204,22 +206,34 @@ class GLM:
 
 def Q1():
     glm = GLM('mauna_loa')
-    # Q1.setParameters(method='basisfunc', model='polynomial', lamb=0, degree=5)
-    # Q1.setParameters(method='basisfunc', model='gaussian', lamb=0, M=10)
-    glm.setParameters(method='basisfunc', model='DIY', lamb=1e-6, degree=4)
-    # Q1.runRegression('cross-validation')
-    # glm.runRegression('validation')
-    glm.runRegression('test')
-
-    # print(Q1.x_train)
-    # print('phiMatrix:', Q1.phiMatrix)
-    print('w:', Q1.w)
+    # _LAMB = [0, 0.0001, 0.001, 0.05, 0.01, 0.05, 0.1, 1]
+    # LAMB, RMSE, RMSEval = [], [], []
+    # for lamb in _LAMB:
+    #     LAMB.append(0)
+    #     glm.setParameters(method='basisfunc', model='DIY', lamb=0, degree=4)
+    #     RMSEval.append(glm.runRegression('validation', graph = 'off'))
+    #     RMSE.append(glm.runRegression('test', graph = 'off'))
+    # print(pd.DataFrame({'lambda': LAMB, 'validation': RMSEval, 'testing': RMSE}))
+    # print('RMSE is the smallest for validation sets at lambda =', _LAMB[RMSEval.index(min(RMSEval))])
+    # print('RMSE is the smallest for test sets at lambda =', _LAMB[RMSE.index(min(RMSE))])
+    #
+    # glm.setParameters(method='basisfunc', model='DIY', lamb=_LAMB[RMSE.index(min(RMSE))], degree=4)
+    # glm.runRegression('test', graph = 'on')
+    # for i in range(7):
+    #     if i == 6:
+    #         lamb = 0
+    #     else: lamb=10**(-i)
+    #     print('lamb =', lamb)
+    #     glm.setParameters(method='basisfunc', model='DIY', lamb=lamb, degree=4)
+    #     print(glm.runRegression('test', graph='on'))
+    glm.setParameters(method='basisfunc', model='DIY', lamb=0.1, degree=4)
+    print(glm.runRegression('test', graph='off'))
 
 def Q2():
     Q2 = GLM('mauna_loa')
     print(Q2.x_train.shape, Q2.x_test.shape)
-    Q2.setParameters(method='kernel', model='DIY', lamb=280, degree=4)
-    Q2.runRegression('train')
+    Q2.setParameters(method='kernel', model='DIY', lamb=2, degree=4)
+    Q2.runRegression('train', graph='off')
 
 def Q3():
     # _THETA = [0.05, 0.1, 0.5, 1, 2]
