@@ -27,10 +27,19 @@ class LinearRegression:
         (self.num_test, self.num_dimension) = self.x_test.shape
 
 
-    def setParameters(self, convergenceError, learningRate, GDvisualization=False):
+    def preprocessSGD(self):
+        indices = list(range(self.num_train))
+        np.random.seed(99)
+        np.random.shuffle(indices)
+        self.x_train_Random, self.y_train_Random = self.x_train[indices], self.y_train[indices]
+
+
+    def setParameters(self, convergenceError, learningRate, batchSize=1, GDvisualization=False):
         self.errorBound = convergenceError
         self.learningRate = learningRate
         self.stepsize = learningRate/self.num_train
+        self.batchSize = batchSize
+        self.num_batches = self.num_train/batchSize
         self.plotGD = GDvisualization
 
 
@@ -39,7 +48,7 @@ class LinearRegression:
         Function of column vector w, loss function for least square error
         Output: scaler value of loss
         '''
-        return (Y - X.dot(w)).T.dot(Y - X.dot(w))[0][0]
+        return ((Y - X.dot(w)).T.dot(Y - X.dot(w))[0][0])/(2 * self.num_train)
 
 
     def getGradient(self, w, X, Y):
@@ -50,7 +59,7 @@ class LinearRegression:
         return X.T.dot(X.dot(w) - Y)
 
 
-    def getGDWeight(self):
+    def getGDWeight(self, stochastic=False):
         '''
         Get the exact gradient descent weight, full-batch
         Lerning rate is set to be a constant here
@@ -67,20 +76,25 @@ class LinearRegression:
             else: stabalized = False
 
             #Get the next iteration
-            wPrev = copy.deepcopy(w)
-            w -= self.stepsize * self.getGradient(w, self.x_train, self.y_train)
-            error = np.linalg.norm(wPrev - w)
-            # print('error:', error)
+            if stochastic:
+                error = 0
+                for i in range(0, self.num_train, self.batchSize):
+                    wPrev = copy.deepcopy(w)
+                    X, Y = self.x_train_Random[i:i+self.batchSize], self.y_train_Random[i:i+self.batchSize]
+                    w -= self.stepsize * self.getGradient(w, X, Y)
+                    error += np.linalg.norm(wPrev - w)/self.num_batches
+            else:
+                wPrev = copy.deepcopy(w)
+                w -= self.stepsize * self.getGradient(w, self.x_train, self.y_train)
+                error = np.linalg.norm(wPrev - w)
 
             #Record iterations
             iter += 1
-            print('Round', iter)
             ROUND.append(iter)
             loss = self.getLoss(w, self.x_train, self.y_train)
             LOSS.append(loss)
 
         if self.plotGD:
-            print('loss:\n', LOSS, '\niteration:\n', ROUND)
             plt.style.use('bmh')
             plt.plot(ROUND, LOSS, label = 'Learning rate = %f'%(self.learningRate), color=_COLORS[colorIndex])
             plt.legend()
@@ -106,12 +120,15 @@ class LinearRegression:
         if method == 'SVD':
             self.w = self.getOptimalWeight()
         elif method == 'GD':
-            self.w = self.getGDWeight()
+            self.w = self.getGDWeight(stochastic=False)
+        elif method == 'SGD':
+            self.preprocessSGD()
+            self.w = self.getGDWeight(stochastic=True)
 
         x, y_actual = self.x_test, self.y_test
         y_predicted = x.dot(self.w)
         rmse = np.sqrt(pow(np.array(y_predicted-y_actual), 2).mean())
-        print('RMSE is', rmse, 'for data', self.dataset, 'with linear regression on the', set, 'set.')
+        print('RMSE is', rmse, 'for data', self.dataset, 'with linear regression on the set.')
 
         if display:
             plt.style.use('bmh')
@@ -125,12 +142,28 @@ class LinearRegression:
 
 
 
-if __name__ == '__main__':
+
+def Q1_GD():
     GD = LinearRegression()
     global colorIndex
     colorIndex = 0
-    for learningRate in [1, 0.5, 0.1, 0.05, 0.001]:
-        GD.setParameters(convergenceError=0.001, learningRate=learningRate, GDvisualization=True)
+    for learningRate in [0.001, 0.05, 0.1, 0.5, 1]:
+        GD.setParameters(convergenceError=0.0001, learningRate=learningRate, GDvisualization=True)
         GD.runRegression('GD')
         colorIndex += 1
     plt.show()
+
+
+def Q1_SGD():
+    SGD = LinearRegression()
+    global colorIndex
+    colorIndex = 0
+    for learningRate in [0.001, 0.05, 0.1, 0.5, 1]:
+        SGD.setParameters(convergenceError=0.0001, learningRate=learningRate, batchSize=1, GDvisualization=True)
+        SGD.runRegression('SGD')
+        colorIndex += 1
+    plt.show()
+
+
+if __name__ == '__main__':
+    Q1_SGD()
