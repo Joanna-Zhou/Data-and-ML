@@ -29,7 +29,7 @@ class LinearRegression:
 
     def preprocessSGD(self):
         indices = list(range(self.num_train))
-        np.random.seed(99)
+        np.random.seed(666)
         np.random.shuffle(indices)
         self.x_train_Random, self.y_train_Random = self.x_train[indices], self.y_train[indices]
 
@@ -59,7 +59,7 @@ class LinearRegression:
         return X.T.dot(X.dot(w) - Y)
 
 
-    def getGDWeight(self, stochastic=False):
+    def getGDWeight(self):
         '''
         Get the exact gradient descent weight, full-batch
         Lerning rate is set to be a constant here
@@ -76,17 +76,9 @@ class LinearRegression:
             else: stabalized = False
 
             #Get the next iteration
-            if stochastic:
-                error = 0
-                for i in range(0, self.num_train, self.batchSize):
-                    wPrev = copy.deepcopy(w)
-                    X, Y = self.x_train_Random[i:i+self.batchSize], self.y_train_Random[i:i+self.batchSize]
-                    w -= self.stepsize * self.getGradient(w, X, Y)
-                    error += np.linalg.norm(wPrev - w)/self.num_batches
-            else:
-                wPrev = copy.deepcopy(w)
-                w -= self.stepsize * self.getGradient(w, self.x_train, self.y_train)
-                error = np.linalg.norm(wPrev - w)
+            wPrev = copy.deepcopy(w)
+            w -= self.stepsize * self.getGradient(w, self.x_train, self.y_train)
+            error = np.linalg.norm(wPrev - w)
 
             #Record iterations
             iter += 1
@@ -100,7 +92,51 @@ class LinearRegression:
             plt.legend()
             plt.title('Least Square Error vs. Gradient Descent Iteration \n Optimal found at iteration %d with a loss of %1.4f' %(iter, loss), loc='center', size=12)
             # plt.show()
+        return w
 
+
+    def getSGDWeight(self):
+        '''
+        Get the exact gradient descent weight, full-batch
+        Lerning rate is set to be a constant here
+        '''
+        w = np.zeros((self.num_dimension, 1))
+        error, stablized, iter, ROUND, loss, lossMin, LOSS = float('inf'), 0, 0, [], float('inf'), float('inf'), []
+
+        while stablized <= 1:
+            if iter >= _ITERCAP:
+                print('Exceeded', _ITERCAP, 'iterations!')
+                break
+
+            #Convergence conditions
+            if loss >= lossMin:
+                stablized += 0.1
+            elif error <= self.errorBound:
+                stablized += 0.1
+                self.stepsize /= 2
+            else:
+                lossMin = copy.deepcopy(loss)
+
+            #Get the next iteration
+            error = 0
+            for i in range(0, self.num_train, self.batchSize):
+                wPrev = copy.deepcopy(w)
+                X, Y = self.x_train_Random[i:i+self.batchSize], self.y_train_Random[i:i+self.batchSize]
+                w -= self.stepsize * self.getGradient(w, X, Y)
+                error += np.linalg.norm(wPrev - w)/self.num_batches
+
+            #Record iterations
+            iter += 1
+            ROUND.append(iter)
+            loss = self.getLoss(w, self.x_train, self.y_train)
+            LOSS.append(loss)
+
+        if self.plotGD:
+            plt.style.use('bmh')
+            plt.plot(ROUND, LOSS, label = 'Learning rate = %f'%(self.learningRate), color=_COLORS[colorIndex])
+            plt.legend()
+            plt.title('Least Square Error vs. Gradient Descent Iteration \n Optimal found at iteration %d with a loss of %1.4f' %(iter, loss), loc='center', size=12)
+            # plt.show()
         return w
 
 
@@ -120,10 +156,10 @@ class LinearRegression:
         if method == 'SVD':
             self.w = self.getOptimalWeight()
         elif method == 'GD':
-            self.w = self.getGDWeight(stochastic=False)
+            self.w = self.getGDWeight()
         elif method == 'SGD':
             self.preprocessSGD()
-            self.w = self.getGDWeight(stochastic=True)
+            self.w = self.getSGDWeight()
 
         x, y_actual = self.x_test, self.y_test
         y_predicted = x.dot(self.w)
