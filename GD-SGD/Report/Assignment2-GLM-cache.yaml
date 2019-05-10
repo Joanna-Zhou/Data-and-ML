@@ -1,0 +1,3398 @@
+version: 0.12.2
+filePath: Assignment2-GLM.tex
+options:
+  $BIBINPUTS:
+    - $ROOTDIR
+    - $ROOTDIR/$OUTDIR
+    - ''
+  $TEXINPUTS:
+    - $ROOTDIR
+    - $ROOTDIR/$OUTDIR
+    - ''
+  bibtexEngine: bibtex
+  cleanPatterns:
+    - '**/*.aux'
+    - '**/*.aux.bak'
+    - '**/*.bbl'
+    - '**/*.bcf'
+    - '**/*.blg'
+    - '**/*.dvi'
+    - '**/*.fdb_latexmk'
+    - '**/*.fls'
+    - '**/*.idx'
+    - '**/*.idx.bak'
+    - '**/*.ilg'
+    - '**/*.ind'
+    - '**/*.lof'
+    - '**/*.log'
+    - '**/*.lol'
+    - '**/*.lot'
+    - '**/*.nav'
+    - '**/*.out'
+    - '**/*.pdf'
+    - '**/*.ps'
+    - '**/*.snm'
+    - '**/*.synctex.gz'
+    - '**/*.toc'
+    - '/**/_minted-${JOB}'
+    - '/${OUTDIR}/sage-plots-for-${JOB}.tex'
+    - /missfont.log
+    - /texput.log
+    - /texput.aux
+  dviToPdfEngine: xdvipdfmx
+  engine: pdflatex
+  epstopdfBoundingBox: default
+  epstopdfOutputPath: $DIR_0/$NAME_0.pdf
+  indexAutomaticRanges: true
+  indexEngine: makeindex
+  indexOrdering: word
+  indexSorting: default
+  knitrConcordance: true
+  knitrOutputPath: $JOB.tex
+  lhs2texStyle: poly
+  literateAgdaEngine: agda
+  literateHaskellEngine: lhs2TeX
+  loadCache: true
+  loadUserOptions: true
+  outputFormat: pdf
+  phaseCycles: 20
+  pweaveCacheDirectory: pweave-cache-for-$JOB
+  pweaveFigureDirectory: pweave-figures-for-$JOB
+  pweaveKernel: python3
+  pweaveOutputFormat: tex
+  pweaveOutputPath: $JOB.tex
+  saveCache: true
+  severity: info
+  validateCache: true
+  synctex: true
+  copyTargetsToRoot: true
+  outputDirectory: ''
+  intermediatePostScript: false
+  $PATH: '/usr/texbin:/Library/TeX/texbin:$PATH'
+files:
+  dicy-instance.yaml-ParsedYAML:
+    timeStamp: 2019-03-12T15:10:44.074Z
+    jobNames: []
+    value:
+      severity: info
+    type: ParsedYAML
+  dicy.yaml-ParsedYAML:
+    jobNames: []
+    type: ParsedYAML
+  Assignment2-GLM.yaml-ParsedYAML:
+    jobNames: []
+    type: ParsedYAML
+  Assignment2-GLM.tex-ParsedLaTeXMagic:
+    timeStamp: 2019-03-12T15:10:44.134Z
+    jobNames: []
+    value: {}
+    type: ParsedLaTeXMagic
+  /Users/joanna.zyz/Library/Application Support/dicy/config.yaml-ParsedYAML:
+    timeStamp: 2019-03-12T15:10:44.130Z
+    jobNames: []
+    value:
+      synctex: true
+      engine: pdflatex
+      severity: warning
+      copyTargetsToRoot: true
+      outputDirectory: ''
+      outputFormat: pdf
+      cleanPatterns:
+        - '**/*.aux'
+        - '**/*.aux.bak'
+        - '**/*.bbl'
+        - '**/*.bcf'
+        - '**/*.blg'
+        - '**/*.dvi'
+        - '**/*.fdb_latexmk'
+        - '**/*.fls'
+        - '**/*.idx'
+        - '**/*.idx.bak'
+        - '**/*.ilg'
+        - '**/*.ind'
+        - '**/*.lof'
+        - '**/*.log'
+        - '**/*.lol'
+        - '**/*.lot'
+        - '**/*.nav'
+        - '**/*.out'
+        - '**/*.pdf'
+        - '**/*.ps'
+        - '**/*.snm'
+        - '**/*.synctex.gz'
+        - '**/*.toc'
+        - '/**/_minted-${JOB}'
+        - '/${OUTDIR}/sage-plots-for-${JOB}.tex'
+        - /missfont.log
+        - /texput.log
+        - /texput.aux
+      intermediatePostScript: false
+      $PATH: '/usr/texbin:/Library/TeX/texbin:$PATH'
+    type: ParsedYAML
+  Assignment2-GLM.tex:
+    timeStamp: 2019-03-12T15:12:41.621Z
+    jobNames: []
+    hash: 1PkImnDUu3ohseHJv3Ms/c3X5rkA+nwD8hdlRrRpowk=
+    type: LaTeX
+    subType: article
+  /Users/joanna.zyz/Library/Application Support/dicy/config.yaml:
+    timeStamp: 2019-03-12T15:10:44.086Z
+    jobNames: []
+    type: YAML
+  x.y-Nil:
+    jobNames: []
+    type: Nil
+  Assignment2-GLM.log:
+    timeStamp: 2019-03-12T15:13:02.104Z
+    jobNames: []
+    hash: uAmAvBJroM+TxZAB01IJFTmc1wyCI/r339WWio7hE1Y=
+    type: LaTeXLog
+    subType: pdfTeX
+  Assignment2-GLM.fls-ParsedFileListing:
+    timeStamp: 2019-03-12T15:12:53.939Z
+    jobNames: []
+    value:
+      messages: []
+      inputs:
+        - /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
+        - /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
+        - /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
+        - /usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map
+        - >-
+          /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+        - >-
+          /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+        - >-
+          /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+        - >-
+          /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+        - >-
+          /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+        - >-
+          /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmex10.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi10.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi12.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi5.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi6.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi7.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi8.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy5.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy6.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy7.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy8.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmbx10.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmbx12.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr10.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr12.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr17.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr5.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr6.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr7.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr8.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr9.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmri10.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi10.pfb
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi7.pfb
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr10.pfb
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr6.pfb
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr7.pfb
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr8.pfb
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr9.pfb
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri10.pfb
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy7.pfb
+        - /usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+        - /usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+        - /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/amscls/amsthm.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/base/size10.clo
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/caption/subcaption.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/colortbl/colortbl.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/enumitem/enumitem.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.cfg
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omllmm.fd
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omslmr.fd
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omslmsy.fd
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omxlmex.fd
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/lm/ot1lmr.fd
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mathtools.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mhsetup.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/ms/everyshi.sty
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/tabu/tabu.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/tools/array.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/varwidth/varwidth.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+        - /usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf
+        - /usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+        - /usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt
+        - /usr/local/texlive/2018/texmf.cnf
+        - 404.png
+        - Assignment2-GLM.aux
+        - Assignment2-GLM.tex
+        - kNNPerformance-TestSet-rosenbrock.png
+        - output_12_0.png
+        - output_12_2.png
+        - output_13_1.png
+        - output_13_3.png
+      outputs:
+        - Assignment2-GLM.aux
+        - Assignment2-GLM.log
+        - Assignment2-GLM.pdf
+      calls: []
+    type: ParsedFileListing
+  Assignment2-GLM.log-ParsedLaTeXLog:
+    timeStamp: 2019-03-12T15:13:02.345Z
+    jobNames: []
+    value:
+      messages:
+        - name: pdfTeX
+          severity: info
+          text: inputenc 2018/04/06 v1.3b Input encoding file
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 27
+              end: 27
+        - name: pdfTeX
+          severity: info
+          text: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 31
+              end: 31
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting symbol font `operators' in version `normal' OT1/cmr/m/n
+            --> OT1/lmr/m/n.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 22
+              end: 22
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 32
+              end: 33
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting symbol font `letters' in version `normal' OML/cmm/m/it
+            --> OML/lmm/m/it.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 23
+              end: 23
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 34
+              end: 35
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting symbol font `symbols' in version `normal' OMS/cmsy/m/n
+            --> OMS/lmsy/m/n.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 24
+              end: 24
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 36
+              end: 37
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting symbol font `largesymbols' in version `normal'
+            OMX/cmex/m/n --> OMX/lmex/m/n.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 25
+              end: 25
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 38
+              end: 39
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting symbol font `operators' in version `bold' OT1/cmr/bx/n
+            --> OT1/lmr/bx/n.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 26
+              end: 26
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 40
+              end: 41
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting symbol font `letters' in version `bold' OML/cmm/b/it -->
+            OML/lmm/b/it.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 27
+              end: 27
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 42
+              end: 43
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting symbol font `symbols' in version `bold' OMS/cmsy/b/n -->
+            OMS/lmsy/b/n.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 28
+              end: 28
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 44
+              end: 45
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting symbol font `largesymbols' in version `bold'
+            OMX/cmex/m/n --> OMX/lmex/m/n.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 29
+              end: 29
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 46
+              end: 47
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting math alphabet `\mathbf' in version `normal' OT1/cmr/bx/n
+            --> OT1/lmr/bx/n.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 31
+              end: 31
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 48
+              end: 49
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting math alphabet `\mathsf' in version `normal' OT1/cmss/m/n
+            --> OT1/lmss/m/n.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 32
+              end: 32
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 50
+              end: 51
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting math alphabet `\mathit' in version `normal' OT1/cmr/m/it
+            --> OT1/lmr/m/it.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 33
+              end: 33
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 52
+              end: 53
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting math alphabet `\mathtt' in version `normal' OT1/cmtt/m/n
+            --> OT1/lmtt/m/n.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 34
+              end: 34
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 54
+              end: 55
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting math alphabet `\mathbf' in version `bold' OT1/cmr/bx/n
+            --> OT1/lmr/bx/n.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 35
+              end: 35
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 56
+              end: 57
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting math alphabet `\mathsf' in version `bold' OT1/cmss/bx/n
+            --> OT1/lmss/bx/n.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 36
+              end: 36
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 58
+              end: 59
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting math alphabet `\mathit' in version `bold' OT1/cmr/bx/it
+            --> OT1/lmr/bx/it.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 37
+              end: 37
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 60
+              end: 61
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting math alphabet `\mathtt' in version `bold' OT1/cmtt/m/n
+            --> OT1/lmtt/m/n.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 38
+              end: 38
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 62
+              end: 63
+        - name: pdfTeX
+          severity: info
+          text: geometry 2018/03/24 v5.7 Page Geometry
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 65
+              end: 65
+        - name: pdfTeX
+          severity: info
+          text: keyval 2014/10/28 v1.15 key=value parser (DPC)
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 67
+              end: 67
+        - name: pdfTeX
+          severity: info
+          text: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 70
+              end: 70
+        - name: pdfTeX
+          severity: info
+          text: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 72
+              end: 72
+        - severity: info
+          name: pdfTeX
+          category: Package ifvtex
+          text: VTeX not detected.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 73
+              end: 73
+        - name: pdfTeX
+          severity: info
+          text: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 75
+              end: 75
+        - name: pdfTeX
+          severity: info
+          text: enumitem 2011/09/28 v3.5.2 Customized lists
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/enumitem/enumitem.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 90
+              end: 90
+        - name: pdfTeX
+          severity: info
+          text: amsmath 2017/09/02 v2.17a AMS math features
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 97
+              end: 97
+        - name: pdfTeX
+          severity: info
+          text: amstext 2000/06/29 v2.01 AMS text
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 101
+              end: 101
+        - name: pdfTeX
+          severity: info
+          text: amsbsy 1999/11/29 v1.2d Bold Symbols
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 107
+              end: 107
+        - name: pdfTeX
+          severity: info
+          text: amsopn 2016/03/08 v2.02 operator names
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 110
+              end: 110
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \frac
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+            range:
+              start: 213
+              end: 213
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 113
+              end: 113
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \overline
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+            range:
+              start: 375
+              end: 375
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 116
+              end: 116
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \ldots
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+            range:
+              start: 472
+              end: 472
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 119
+              end: 119
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \dots
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+            range:
+              start: 475
+              end: 475
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 120
+              end: 120
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \cdots
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+            range:
+              start: 596
+              end: 596
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 121
+              end: 121
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Redeclaring font encoding OML
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+            range:
+              start: 712
+              end: 712
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 125
+              end: 125
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Redeclaring font encoding OMS
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+            range:
+              start: 713
+              end: 713
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 126
+              end: 126
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: 'Redefining \['
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+            range:
+              start: 2817
+              end: 2817
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 147
+              end: 147
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: 'Redefining \]'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+            range:
+              start: 2818
+              end: 2818
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 148
+              end: 148
+        - name: pdfTeX
+          severity: info
+          text: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 150
+              end: 150
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting math alphabet `\mathfrak' in version `bold' U/euf/m/n
+            --> U/euf/b/n.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+            range:
+              start: 106
+              end: 106
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 153
+              end: 154
+        - name: pdfTeX
+          severity: info
+          text: amsthm 2017/10/31 v2.20.4
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amscls/amsthm.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 156
+              end: 156
+        - name: pdfTeX
+          severity: info
+          text: mathtools 2018/01/08 v1.21 mathematical typesetting tools
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mathtools.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 167
+              end: 167
+        - name: pdfTeX
+          severity: info
+          text: 'calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 169
+              end: 169
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \setlength
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
+            range:
+              start: 80
+              end: 80
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 176
+              end: 176
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \addtolength
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
+            range:
+              start: 81
+              end: 81
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 177
+              end: 177
+        - name: pdfTeX
+          severity: info
+          text: mhsetup 2017/03/31 v1.3 programming setup (MH)
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mhsetup.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 181
+              end: 181
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Thecontrolsequence`\('isalreadyrobust
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mathtools.sty
+            range:
+              start: 129
+              end: 129
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 183
+              end: 183
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Thecontrolsequence`\)'isalreadyrobust
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mathtools.sty
+            range:
+              start: 129
+              end: 129
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 184
+              end: 184
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: 'Thecontrolsequence`\[''isalreadyrobust'
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mathtools.sty
+            range:
+              start: 129
+              end: 129
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 185
+              end: 185
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: 'Thecontrolsequence`\]''isalreadyrobust'
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mathtools.sty
+            range:
+              start: 129
+              end: 129
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 186
+              end: 186
+        - name: pdfTeX
+          severity: info
+          text: array 2018/04/07 v2.4g Tabular extension package (FMi)
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/tools/array.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 197
+              end: 197
+        - name: pdfTeX
+          severity: info
+          text: tabu 2011/02/26 v2.8 - flexible LaTeX tabulars (FC)
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/tabu/tabu.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 206
+              end: 206
+        - name: pdfTeX
+          severity: info
+          text: varwidth 2009/03/30 ver 0.92; Variable-width minipages
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/varwidth/varwidth.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 208
+              end: 208
+        - name: pdfTeX
+          severity: info
+          text: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 237
+              end: 237
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: 'Driver file: pdftex.def'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+            range:
+              start: 225
+              end: 225
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 241
+              end: 241
+        - name: pdfTeX
+          severity: info
+          text: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/colortbl/colortbl.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 245
+              end: 245
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: Model `cmy' substituted by `cmy0'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+            range:
+              start: 1348
+              end: 1348
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 250
+              end: 250
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: Model `hsb' substituted by `rgb'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+            range:
+              start: 1352
+              end: 1352
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 251
+              end: 251
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: Model `RGB' extended
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+            range:
+              start: 1364
+              end: 1364
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 252
+              end: 252
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: Model `HTML' substituted by `rgb'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+            range:
+              start: 1366
+              end: 1366
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 253
+              end: 253
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: Model `Hsb' substituted by `hsb'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+            range:
+              start: 1367
+              end: 1367
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 254
+              end: 254
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: Model `tHsb' substituted by `hsb'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+            range:
+              start: 1368
+              end: 1368
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 255
+              end: 255
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: Model `HSB' substituted by `hsb'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+            range:
+              start: 1369
+              end: 1369
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 256
+              end: 256
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: Model `Gray' substituted by `gray'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+            range:
+              start: 1370
+              end: 1370
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 257
+              end: 257
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: Model `wave' substituted by `hsb'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+            range:
+              start: 1371
+              end: 1371
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 258
+              end: 258
+        - name: pdfTeX
+          severity: info
+          text: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/ms/everyshi.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 273
+              end: 273
+        - name: pdfTeX
+          severity: info
+          text: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.te
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 276
+              end: 276
+        - name: pdfTeX
+          severity: info
+          text: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 278
+              end: 278
+        - name: pdfTeX
+          severity: info
+          text: 'graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 281
+              end: 281
+        - name: pdfTeX
+          severity: info
+          text: 'graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 283
+              end: 283
+        - name: pdfTeX
+          severity: info
+          text: trig 2016/01/03 v1.10 sin cos tan (DPC)
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 285
+              end: 285
+        - severity: info
+          name: pdfTeX
+          category: Package graphics
+          text: 'Driver file: pdftex.def'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+            range:
+              start: 99
+              end: 99
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 289
+              end: 289
+        - name: pdfTeX
+          severity: info
+          text: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 483
+              end: 483
+        - name: pdfTeX
+          severity: info
+          text: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 489
+              end: 489
+        - name: pdfTeX
+          severity: info
+          text: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 496
+              end: 496
+        - name: pdfTeX
+          severity: info
+          text: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 505
+              end: 505
+        - name: pdfTeX
+          severity: info
+          text: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/latex/caption/subcaption.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 541
+              end: 541
+        - name: pdfTeX
+          severity: info
+          text: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 543
+              end: 543
+        - name: pdfTeX
+          severity: info
+          text: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 545
+              end: 545
+        - severity: info
+          name: pdfTeX
+          category: Package caption3
+          text: 'TeX engine: e-TeX'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
+            range:
+              start: 67
+              end: 67
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 546
+              end: 546
+        - name: pdfTeX
+          severity: info
+          text: wrapfig 2003/01/31 v 3.6
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 565
+              end: 565
+        - name: pdfTeX
+          severity: info
+          text: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 567
+              end: 567
+        - name: pdfTeX
+          severity: info
+          text: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 569
+              end: 569
+        - name: pdfTeX
+          severity: info
+          text: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 571
+              end: 571
+        - name: pdfTeX
+          severity: info
+          text: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 573
+              end: 573
+        - name: pdfTeX
+          severity: info
+          text: listings 2015/06/04 1.6 (Carsten Heinz)
+          source:
+            file: Assignment2-GLM.tex
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 595
+              end: 595
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for OML/cmm/m/it ... okay
+          source:
+            file: Assignment2-GLM.tex
+            range:
+              start: 68
+              end: 68
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 599
+              end: 600
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for T1/cmr/m/n ... okay
+          source:
+            file: Assignment2-GLM.tex
+            range:
+              start: 68
+              end: 68
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 601
+              end: 602
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for OT1/cmr/m/n ... okay
+          source:
+            file: Assignment2-GLM.tex
+            range:
+              start: 68
+              end: 68
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 603
+              end: 604
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for OMS/cmsy/m/n ... okay
+          source:
+            file: Assignment2-GLM.tex
+            range:
+              start: 68
+              end: 68
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 605
+              end: 606
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for OMX/cmex/m/n ... okay
+          source:
+            file: Assignment2-GLM.tex
+            range:
+              start: 68
+              end: 68
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 607
+              end: 608
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for U/cmr/m/n ... okay
+          source:
+            file: Assignment2-GLM.tex
+            range:
+              start: 68
+              end: 68
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 609
+              end: 610
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Try loading font information for OT1+lmr
+          source:
+            file: Assignment2-GLM.tex
+            range:
+              start: 68
+              end: 68
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 611
+              end: 611
+        - name: pdfTeX
+          severity: info
+          text: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 663
+              end: 663
+        - name: pdfTeX
+          severity: info
+          text: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 665
+              end: 665
+        - name: pdfTeX
+          severity: info
+          text: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 667
+              end: 667
+        - name: pdfTeX
+          severity: info
+          text: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 669
+              end: 669
+        - name: pdfTeX
+          severity: info
+          text: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 671
+              end: 671
+        - name: pdfTeX
+          severity: info
+          text: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 673
+              end: 673
+        - name: pdfTeX
+          severity: info
+          text: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 675
+              end: 675
+        - severity: info
+          name: pdfTeX
+          category: Package ifluatex
+          text: LuaTeX not detected.
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 676
+              end: 676
+        - severity: info
+          name: pdfTeX
+          category: Package etexcmds
+          text: >-
+            Could not find \expanded. That can mean that you are not using
+            pdfTeX 1.50 or that some package has redefined \expanded. In the
+            latter case, load this package earlier.
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 678
+              end: 681
+        - name: pdfTeX
+          severity: info
+          text: >-
+            pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX
+            (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 683
+              end: 684
+        - severity: info
+          name: pdfTeX
+          category: Package pdftexcmds
+          text: LuaTeX not detected.
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 685
+              end: 685
+        - severity: info
+          name: pdfTeX
+          category: Package pdftexcmds
+          text: \pdf@primitive is available.
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 686
+              end: 686
+        - severity: info
+          name: pdfTeX
+          category: Package pdftexcmds
+          text: \pdf@ifprimitive is available.
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 687
+              end: 687
+        - severity: info
+          name: pdfTeX
+          category: Package pdftexcmds
+          text: \pdfdraftmode found.
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 688
+              end: 688
+        - severity: info
+          name: pdfTeX
+          category: Package epstopdf-base
+          text: Redefining graphics rule for `.eps'
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+            range:
+              start: 438
+              end: 438
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 690
+              end: 691
+        - severity: info
+          name: pdfTeX
+          category: Package grfext
+          text: >-
+            Graphics extension search list:
+            [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+            \AppendGraphicsExtensions.
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+            range:
+              start: 456
+              end: 456
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 692
+              end: 695
+        - severity: info
+          name: pdfTeX
+          category: Package caption
+          text: Begin \AtBeginDocument code.
+          source:
+            file: Assignment2-GLM.tex
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 700
+              end: 700
+        - severity: info
+          name: pdfTeX
+          category: Package caption
+          text: listings package is loaded.
+          source:
+            file: Assignment2-GLM.tex
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 701
+              end: 701
+        - severity: info
+          name: pdfTeX
+          category: Package caption
+          text: wrapfig package is loaded.
+          source:
+            file: Assignment2-GLM.tex
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 702
+              end: 702
+        - severity: info
+          name: pdfTeX
+          category: Package caption
+          text: End \AtBeginDocument code.
+          source:
+            file: Assignment2-GLM.tex
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 703
+              end: 703
+        - severity: info
+          name: pdfTeX
+          category: Package pdftex.def
+          text: '404.png used Requested size: 597.50787pt x 624.53752pt.'
+          source:
+            file: Assignment2-GLM.tex
+            range:
+              start: 71
+              end: 71
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 709
+              end: 710
+        - severity: error
+          name: pdfTeX
+          text: Undefined control sequence
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 711
+              end: 711
+          source:
+            file: Assignment2-GLM.tex
+            range:
+              start: 73
+              end: 73
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Try loading font information for OML+lmm
+          source:
+            file: Assignment2-GLM.tex
+            range:
+              start: 73
+              end: 73
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 722
+              end: 722
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Try loading font information for OMS+lmsy
+          source:
+            file: Assignment2-GLM.tex
+            range:
+              start: 73
+              end: 73
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 726
+              end: 726
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Try loading font information for OMX+lmex
+          source:
+            file: Assignment2-GLM.tex
+            range:
+              start: 73
+              end: 73
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 731
+              end: 731
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: External font `lmex10' loaded for size <12>.
+          source:
+            file: Assignment2-GLM.tex
+            range:
+              start: 73
+              end: 73
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 736
+              end: 737
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: External font `lmex10' loaded for size <8>.
+          source:
+            file: Assignment2-GLM.tex
+            range:
+              start: 73
+              end: 73
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 738
+              end: 739
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: External font `lmex10' loaded for size <6>.
+          source:
+            file: Assignment2-GLM.tex
+            range:
+              start: 73
+              end: 73
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 740
+              end: 741
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Try loading font information for U+msa
+          source:
+            file: Assignment2-GLM.tex
+            range:
+              start: 73
+              end: 73
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 742
+              end: 742
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Try loading font information for U+msb
+          source:
+            file: Assignment2-GLM.tex
+            range:
+              start: 73
+              end: 73
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 746
+              end: 746
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: External font `lmex10' loaded for size <10>.
+          source:
+            file: Assignment2-GLM.tex
+            range:
+              start: 95
+              end: 95
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 753
+              end: 754
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: External font `lmex10' loaded for size <7>.
+          source:
+            file: Assignment2-GLM.tex
+            range:
+              start: 95
+              end: 95
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 755
+              end: 756
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: External font `lmex10' loaded for size <5>.
+          source:
+            file: Assignment2-GLM.tex
+            range:
+              start: 95
+              end: 95
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 757
+              end: 758
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Try loading font information for OMS+lmr
+          source:
+            file: Assignment2-GLM.tex
+            range:
+              start: 97
+              end: 97
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 759
+              end: 759
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Font shape `OMS/lmr/m/n' in size <10> not available Font shape
+            `OMS/lmsy/m/n' tried instead.
+          source:
+            file: Assignment2-GLM.tex
+            range:
+              start: 97
+              end: 97
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 763
+              end: 764
+        - severity: info
+          name: pdfTeX
+          category: Package pdftex.def
+          text: 'output_12_0.png used Requested size: 203.83417pt x 138.24886pt.'
+          source:
+            file: Assignment2-GLM.tex
+            range:
+              start: 242
+              end: 242
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 774
+              end: 775
+        - severity: info
+          name: pdfTeX
+          category: Package pdftex.def
+          text: 'output_12_2.png used Requested size: 203.83417pt x 144.25774pt.'
+          source:
+            file: Assignment2-GLM.tex
+            range:
+              start: 246
+              end: 246
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 779
+              end: 780
+        - severity: info
+          name: pdfTeX
+          category: Package pdftex.def
+          text: 'output_13_1.png used Requested size: 203.83417pt x 151.58147pt.'
+          source:
+            file: Assignment2-GLM.tex
+            range:
+              start: 256
+              end: 256
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 784
+              end: 785
+        - severity: info
+          name: pdfTeX
+          category: Package pdftex.def
+          text: 'output_13_3.png used Requested size: 203.83417pt x 155.12665pt.'
+          source:
+            file: Assignment2-GLM.tex
+            range:
+              start: 260
+              end: 260
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 789
+              end: 790
+        - severity: info
+          name: pdfTeX
+          category: Package pdftex.def
+          text: >-
+            kNNPerformance-TestSet-rosenbrock.png used Requested size:
+            221.95676pt x 230.50354pt.
+          source:
+            file: Assignment2-GLM.tex
+            range:
+              start: 359
+              end: 359
+          log:
+            file: Assignment2-GLM.log
+            range:
+              start: 800
+              end: 802
+      inputs: []
+      outputs:
+        - Assignment2-GLM.pdf
+      calls: []
+    type: ParsedLaTeXLog
+  Assignment2-GLM.aux:
+    timeStamp: 2019-03-12T15:13:01.939Z
+    jobNames: []
+    hash: ymg+sRNoFR8H6/jA1OwoPHSmh533rzitlLDGLt51LRM=
+    type: LaTeXAuxilary
+  Assignment2-GLM.fls:
+    timeStamp: 2019-03-12T15:13:02.073Z
+    jobNames: []
+    hash: 0ozFcWXPKHqjsoIF5oxRsI+ewIbSOairByYe3HV7YvE=
+    type: FileListing
+  Assignment2-GLM.pdf:
+    timeStamp: 2019-03-12T15:13:02.102Z
+    jobNames: []
+    hash: BD/BzzUxCmmCPQsUTStCCoccg8f00/3t+80aI0CTok4=
+    type: PortableDocumentFormat
+  Assignment2-GLM.aux-ParsedLaTeXAuxilary:
+    timeStamp: 2019-03-12T15:12:42.580Z
+    jobNames: []
+    value:
+      commands:
+        - relax
+        - pgfsyspdfmark
+        - '@writefile'
+        - '@writefile'
+        - providecommand
+        - newlabel
+        - '@writefile'
+        - newlabel
+        - '@writefile'
+        - '@writefile'
+        - '@writefile'
+    type: ParsedLaTeXAuxilary
+  /usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map:
+    timeStamp: 2017-11-27T23:19:31.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm:
+    timeStamp: 2016-11-25T18:31:38.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm:
+    timeStamp: 2016-11-25T18:31:38.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm:
+    timeStamp: 2016-11-25T18:31:38.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm:
+    timeStamp: 2016-11-25T18:31:38.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmex10.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi12.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi6.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi8.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy6.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy8.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmbx12.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr10.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr12.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr17.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr6.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr8.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii:
+    timeStamp: 2016-11-25T18:33:26.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty:
+    timeStamp: 2016-11-25T18:33:35.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/atbegshi.sty:
+    timeStamp: 2016-11-25T18:33:35.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty:
+    timeStamp: 2016-11-25T18:33:35.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty:
+    timeStamp: 2016-11-25T18:33:35.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty:
+    timeStamp: 2017-03-26T21:48:50.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifvtex.sty:
+    timeStamp: 2016-11-25T18:33:35.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty:
+    timeStamp: 2016-11-25T18:33:35.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty:
+    timeStamp: 2016-11-25T18:33:35.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty:
+    timeStamp: 2016-11-25T18:33:35.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty:
+    timeStamp: 2016-11-25T18:33:35.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty:
+    timeStamp: 2018-03-30T21:19:41.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/tex/latex/amscls/amsthm.sty:
+    timeStamp: 2017-12-19T22:32:49.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty:
+    timeStamp: 2016-11-25T18:33:40.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd:
+    timeStamp: 2016-11-25T18:33:40.000Z
+    jobNames: []
+    type: FontDescription
+  /usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd:
+    timeStamp: 2016-11-25T18:33:40.000Z
+    jobNames: []
+    type: FontDescription
+  /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty:
+    timeStamp: 2018-04-07T20:51:30.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty:
+    timeStamp: 2018-04-07T20:51:30.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty:
+    timeStamp: 2018-04-07T20:51:30.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty:
+    timeStamp: 2018-04-07T20:51:30.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty:
+    timeStamp: 2018-04-07T20:51:30.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls:
+    timeStamp: 2018-04-06T21:33:45.000Z
+    jobNames: []
+    type: LaTeXClass
+  /usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty:
+    timeStamp: 2018-04-06T21:33:45.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/base/size10.clo:
+    timeStamp: 2018-04-06T21:33:45.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty:
+    timeStamp: 2016-11-25T18:33:43.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty:
+    timeStamp: 2016-11-25T18:33:43.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/caption/subcaption.sty:
+    timeStamp: 2016-11-25T18:33:43.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/colortbl/colortbl.sty:
+    timeStamp: 2016-11-25T18:33:45.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/enumitem/enumitem.sty:
+    timeStamp: 2016-11-25T18:33:47.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/eso-pic/eso-pic.sty:
+    timeStamp: 2016-11-25T18:33:47.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty:
+    timeStamp: 2018-03-25T21:23:05.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg:
+    timeStamp: 2016-11-25T18:33:50.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg:
+    timeStamp: 2016-11-25T18:33:50.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def:
+    timeStamp: 2018-01-09T22:36:08.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty:
+    timeStamp: 2018-04-07T20:53:05.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty:
+    timeStamp: 2018-04-07T20:53:05.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty:
+    timeStamp: 2018-04-07T20:53:05.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty:
+    timeStamp: 2018-04-07T20:53:05.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg:
+    timeStamp: 2016-11-25T18:33:53.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.cfg:
+    timeStamp: 2016-11-25T18:33:53.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.sty:
+    timeStamp: 2016-11-25T18:33:53.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty:
+    timeStamp: 2016-11-25T18:33:53.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty:
+    timeStamp: 2016-11-25T18:33:53.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omllmm.fd:
+    timeStamp: 2016-11-25T18:33:53.000Z
+    jobNames: []
+    type: FontDescription
+  /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omslmsy.fd:
+    timeStamp: 2016-11-25T18:33:53.000Z
+    jobNames: []
+    type: FontDescription
+  /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omxlmex.fd:
+    timeStamp: 2016-11-25T18:33:53.000Z
+    jobNames: []
+    type: FontDescription
+  /usr/local/texlive/2018/texmf-dist/tex/latex/lm/ot1lmr.fd:
+    timeStamp: 2016-11-25T18:33:53.000Z
+    jobNames: []
+    type: FontDescription
+  /usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mathtools.sty:
+    timeStamp: 2018-01-08T22:18:48.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mhsetup.sty:
+    timeStamp: 2017-06-06T21:53:26.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/ms/everyshi.sty:
+    timeStamp: 2016-11-25T18:33:55.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty:
+    timeStamp: 2016-11-25T18:33:56.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty:
+    timeStamp: 2016-11-25T18:33:56.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty:
+    timeStamp: 2016-11-25T18:33:56.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty:
+    timeStamp: 2016-11-25T18:33:57.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty:
+    timeStamp: 2016-11-25T18:33:57.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty:
+    timeStamp: 2016-11-25T18:33:57.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty:
+    timeStamp: 2016-11-25T18:33:57.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty:
+    timeStamp: 2016-11-25T18:33:57.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/math/pgfmath.sty:
+    timeStamp: 2016-11-25T18:33:57.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty:
+    timeStamp: 2016-11-25T18:33:57.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgffor.sty:
+    timeStamp: 2016-11-25T18:33:57.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty:
+    timeStamp: 2016-11-25T18:33:57.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty:
+    timeStamp: 2016-11-25T18:33:57.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/tabu/tabu.sty:
+    timeStamp: 2016-11-25T18:34:00.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/tools/array.sty:
+    timeStamp: 2018-04-07T20:53:05.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty:
+    timeStamp: 2018-04-06T21:33:45.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/varwidth/varwidth.sty:
+    timeStamp: 2016-11-25T18:34:02.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/wrapfig/wrapfig.sty:
+    timeStamp: 2016-11-25T18:34:03.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty:
+    timeStamp: 2016-11-25T18:34:03.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf:
+    timeStamp: 2018-03-26T12:22:29.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt:
+    timeStamp: 2018-04-17T03:08:36.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf.cnf:
+    timeStamp: 2018-04-17T03:08:03.000Z
+    jobNames: []
+  404.png:
+    timeStamp: 2019-02-12T23:27:36.586Z
+    jobNames: []
+    hash: waHQVREhMivssXaxZZHm3lUnVgVOmgUaRtoGeNpL6E0=
+  /usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map:
+    timeStamp: 2018-04-17T03:08:12.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc:
+    timeStamp: 2016-11-25T18:31:08.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc:
+    timeStamp: 2016-11-25T18:31:08.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc:
+    timeStamp: 2016-11-25T18:31:08.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm:
+    timeStamp: 2016-11-25T18:31:38.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm:
+    timeStamp: 2016-11-25T18:31:38.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi10.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi5.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi7.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy5.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy7.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmbx10.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr5.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr7.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr9.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmri10.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx10.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi10.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi7.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr10.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr6.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr7.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr8.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr9.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri10.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy7.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omslmr.fd:
+    timeStamp: 2016-11-25T18:33:53.000Z
+    jobNames: []
+    type: FontDescription
+  kNNPerformance-TestSet-rosenbrock.png:
+    timeStamp: 2019-02-12T23:11:09.885Z
+    jobNames: []
+    hash: aqDedWNib71rW66zicJ0jNliOUMHaUkyDFdYmP8jTiw=
+  output_12_0.png:
+    timeStamp: 2019-02-11T14:32:06.000Z
+    jobNames: []
+    hash: mUI5dmllPK5GAENxl8YG9O/J9Ls0My+J3ZLKtM8QG7k=
+  output_12_2.png:
+    timeStamp: 2019-02-11T14:32:06.000Z
+    jobNames: []
+    hash: BgAFFDoMVIzsURg66hnTa4E10PP1SXBnQHqD4bCiXuo=
+  output_13_1.png:
+    timeStamp: 2019-02-13T00:25:10.000Z
+    jobNames: []
+    hash: 7E7vGMFtGvTN2aR7Sf6q5aiznQmK5lhsFkXCHmKQF8M=
+  output_13_3.png:
+    timeStamp: 2019-02-13T00:25:10.000Z
+    jobNames: []
+    hash: k8DuNiY+QEMwUO2A0WcVINoapwYD/ZFTEcSF7ma691w=
+rules:
+  - name: ApplyOptions
+    command: load
+    phase: initialize
+    parameters: []
+    inputs:
+      - file: dicy.yaml-ParsedYAML
+        type: default
+      - file: Assignment2-GLM.yaml-ParsedYAML
+        type: default
+      - file: Assignment2-GLM.tex-ParsedLaTeXMagic
+        type: default
+      - file: dicy-instance.yaml-ParsedYAML
+        type: default
+      - file: >-
+          /Users/joanna.zyz/Library/Application
+          Support/dicy/config.yaml-ParsedYAML
+        type: default
+    outputs: []
+  - name: LoadAndValidateCache
+    command: load
+    phase: initialize
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: Migrate
+    command: load
+    phase: initialize
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: ApplyOptions
+    command: load
+    phase: execute
+    parameters: []
+    inputs:
+      - file: dicy.yaml-ParsedYAML
+        type: default
+      - file: Assignment2-GLM.yaml-ParsedYAML
+        type: default
+      - file: Assignment2-GLM.tex-ParsedLaTeXMagic
+        type: default
+      - file: dicy-instance.yaml-ParsedYAML
+        type: default
+      - file: >-
+          /Users/joanna.zyz/Library/Application
+          Support/dicy/config.yaml-ParsedYAML
+        type: default
+    outputs: []
+  - name: ParseOptionsFile
+    command: load
+    phase: execute
+    parameters: []
+    inputs:
+      - file: /Users/joanna.zyz/Library/Application Support/dicy/config.yaml
+        type: default
+    outputs:
+      - file: >-
+          /Users/joanna.zyz/Library/Application
+          Support/dicy/config.yaml-ParsedYAML
+        type: default
+  - name: ParseLaTeXMagic
+    command: load
+    phase: execute
+    parameters:
+      - Assignment2-GLM.tex
+    inputs:
+      - file: Assignment2-GLM.tex
+        type: default
+    outputs:
+      - file: Assignment2-GLM.tex-ParsedLaTeXMagic
+        type: default
+  - name: AssignJobNames
+    command: load
+    phase: finalize
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: FindLogFiles
+    command: build
+    phase: initialize
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: LaTeX
+    command: build
+    phase: execute
+    parameters:
+      - Assignment2-GLM.tex
+    inputs:
+      - file: Assignment2-GLM.tex
+        type: default
+      - file: Assignment2-GLM.fls-ParsedFileListing
+        type: default
+      - file: Assignment2-GLM.log-ParsedLaTeXLog
+        type: default
+      - file: Assignment2-GLM.aux
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmex10.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi12.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi6.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi8.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy6.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy8.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmbx12.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr10.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr12.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr17.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr6.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr8.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/amscls/amsthm.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/base/size10.clo
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/caption/subcaption.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/colortbl/colortbl.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/enumitem/enumitem.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.cfg
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omllmm.fd
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omslmsy.fd
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omxlmex.fd
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/ot1lmr.fd
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mathtools.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mhsetup.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/ms/everyshi.sty
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/tabu/tabu.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/tools/array.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/varwidth/varwidth.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf
+        type: default
+      - file: /usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt
+        type: default
+      - file: /usr/local/texlive/2018/texmf.cnf
+        type: default
+      - file: 404.png
+        type: default
+      - file: /usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi10.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi5.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi7.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy5.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy7.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmbx10.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr5.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr7.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr9.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmri10.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi10.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi7.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr10.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr6.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr7.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr8.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr9.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri10.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy7.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omslmr.fd
+        type: default
+      - file: kNNPerformance-TestSet-rosenbrock.png
+        type: default
+      - file: output_12_0.png
+        type: default
+      - file: output_12_2.png
+        type: default
+      - file: output_13_1.png
+        type: default
+      - file: output_13_3.png
+        type: default
+    outputs:
+      - file: Assignment2-GLM.aux
+        type: default
+      - file: Assignment2-GLM.fls
+        type: default
+      - file: Assignment2-GLM.log
+        type: default
+      - file: Assignment2-GLM.pdf
+        type: target
+  - name: ParseLaTeXLog
+    command: build
+    phase: execute
+    parameters:
+      - Assignment2-GLM.log
+    inputs:
+      - file: Assignment2-GLM.log
+        type: default
+    outputs:
+      - file: Assignment2-GLM.log-ParsedLaTeXLog
+        type: default
+  - name: ParseLaTeXAuxilary
+    command: build
+    phase: execute
+    parameters:
+      - Assignment2-GLM.aux
+    inputs:
+      - file: Assignment2-GLM.aux
+        type: default
+    outputs:
+      - file: Assignment2-GLM.aux-ParsedLaTeXAuxilary
+        type: default
+  - name: ParseFileListing
+    command: build
+    phase: execute
+    parameters:
+      - Assignment2-GLM.fls
+    inputs:
+      - file: Assignment2-GLM.fls
+        type: default
+    outputs:
+      - file: Assignment2-GLM.fls-ParsedFileListing
+        type: default
+  - name: LogProducedTargets
+    command: build
+    phase: finalize
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: CheckForMissingBuildRule
+    command: build
+    phase: finalize
+    parameters:
+      - Assignment2-GLM.tex
+    inputs:
+      - file: Assignment2-GLM.tex
+        type: default
+    outputs: []
+  - name: FindLogFiles
+    command: log
+    phase: initialize
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: ParseLaTeXLog
+    command: log
+    phase: execute
+    parameters:
+      - Assignment2-GLM.log
+    inputs:
+      - file: Assignment2-GLM.log
+        type: default
+    outputs:
+      - file: Assignment2-GLM.log-ParsedLaTeXLog
+        type: default
+  - name: ReportLogMessages
+    command: log
+    phase: execute
+    parameters:
+      - Assignment2-GLM.log-ParsedLaTeXLog
+    inputs:
+      - file: Assignment2-GLM.log-ParsedLaTeXLog
+        type: default
+    outputs: []
+  - name: SaveCache
+    command: save
+    phase: execute
+    parameters: []
+    inputs: []
+    outputs: []

@@ -1,0 +1,4233 @@
+version: 0.12.2
+filePath: Assignment5-Bayesian.tex
+options:
+  $BIBINPUTS:
+    - $ROOTDIR
+    - $ROOTDIR/$OUTDIR
+    - ''
+  $TEXINPUTS:
+    - $ROOTDIR
+    - $ROOTDIR/$OUTDIR
+    - ''
+  bibtexEngine: bibtex
+  cleanPatterns:
+    - '**/*.aux'
+    - '**/*.aux.bak'
+    - '**/*.bbl'
+    - '**/*.bcf'
+    - '**/*.blg'
+    - '**/*.dvi'
+    - '**/*.fdb_latexmk'
+    - '**/*.fls'
+    - '**/*.idx'
+    - '**/*.idx.bak'
+    - '**/*.ilg'
+    - '**/*.ind'
+    - '**/*.lof'
+    - '**/*.log'
+    - '**/*.lol'
+    - '**/*.lot'
+    - '**/*.nav'
+    - '**/*.out'
+    - '**/*.pdf'
+    - '**/*.ps'
+    - '**/*.snm'
+    - '**/*.synctex.gz'
+    - '**/*.toc'
+    - '/**/_minted-${JOB}'
+    - '/${OUTDIR}/sage-plots-for-${JOB}.tex'
+    - /missfont.log
+    - /texput.log
+    - /texput.aux
+  dviToPdfEngine: xdvipdfmx
+  engine: pdflatex
+  epstopdfBoundingBox: default
+  epstopdfOutputPath: $DIR_0/$NAME_0.pdf
+  indexAutomaticRanges: true
+  indexEngine: makeindex
+  indexOrdering: word
+  indexSorting: default
+  knitrConcordance: true
+  knitrOutputPath: $JOB.tex
+  lhs2texStyle: poly
+  literateAgdaEngine: agda
+  literateHaskellEngine: lhs2TeX
+  loadCache: true
+  loadUserOptions: true
+  outputFormat: pdf
+  phaseCycles: 20
+  pweaveCacheDirectory: pweave-cache-for-$JOB
+  pweaveFigureDirectory: pweave-figures-for-$JOB
+  pweaveKernel: python3
+  pweaveOutputFormat: tex
+  pweaveOutputPath: $JOB.tex
+  saveCache: true
+  severity: info
+  validateCache: true
+  synctex: true
+  copyTargetsToRoot: true
+  outputDirectory: ''
+  intermediatePostScript: false
+  $PATH: '/usr/texbin:/Library/TeX/texbin:$PATH'
+files:
+  dicy-instance.yaml-ParsedYAML:
+    timeStamp: 2019-04-13T03:22:41.486Z
+    jobNames: []
+    value:
+      severity: info
+    type: ParsedYAML
+  dicy.yaml-ParsedYAML:
+    jobNames: []
+    type: ParsedYAML
+  Assignment5-Bayesian.yaml-ParsedYAML:
+    jobNames: []
+    type: ParsedYAML
+  Assignment5-Bayesian.tex-ParsedLaTeXMagic:
+    timeStamp: 2019-04-13T03:12:03.135Z
+    jobNames: []
+    value: {}
+    type: ParsedLaTeXMagic
+  /Users/joanna.zyz/Library/Application Support/dicy/config.yaml-ParsedYAML:
+    timeStamp: 2019-04-13T03:12:03.128Z
+    jobNames: []
+    value:
+      synctex: true
+      engine: pdflatex
+      severity: warning
+      copyTargetsToRoot: true
+      outputDirectory: ''
+      outputFormat: pdf
+      cleanPatterns:
+        - '**/*.aux'
+        - '**/*.aux.bak'
+        - '**/*.bbl'
+        - '**/*.bcf'
+        - '**/*.blg'
+        - '**/*.dvi'
+        - '**/*.fdb_latexmk'
+        - '**/*.fls'
+        - '**/*.idx'
+        - '**/*.idx.bak'
+        - '**/*.ilg'
+        - '**/*.ind'
+        - '**/*.lof'
+        - '**/*.log'
+        - '**/*.lol'
+        - '**/*.lot'
+        - '**/*.nav'
+        - '**/*.out'
+        - '**/*.pdf'
+        - '**/*.ps'
+        - '**/*.snm'
+        - '**/*.synctex.gz'
+        - '**/*.toc'
+        - '/**/_minted-${JOB}'
+        - '/${OUTDIR}/sage-plots-for-${JOB}.tex'
+        - /missfont.log
+        - /texput.log
+        - /texput.aux
+      intermediatePostScript: false
+      $PATH: '/usr/texbin:/Library/TeX/texbin:$PATH'
+    type: ParsedYAML
+  Assignment5-Bayesian.tex:
+    timeStamp: 2019-04-13T03:22:38.359Z
+    jobNames: []
+    hash: IQzmQIW3QvMEHkblz8gtsSjdkX3CdgT8bQiwA8QEUcM=
+    type: LaTeX
+    subType: article
+  /Users/joanna.zyz/Library/Application Support/dicy/config.yaml:
+    timeStamp: 2019-04-13T03:12:03.075Z
+    jobNames: []
+    type: YAML
+  x.y-Nil:
+    jobNames: []
+    type: Nil
+  Assignment5-Bayesian.log:
+    timeStamp: 2019-04-13T03:23:06.774Z
+    jobNames: []
+    hash: Pmh6Ah8g+ma1c5PH1wZEBMadeZIRhHjKfjCpWl4BuYI=
+    type: LaTeXLog
+    subType: pdfTeX
+  Assignment5-Bayesian.fls-ParsedFileListing:
+    timeStamp: 2019-04-13T03:22:56.213Z
+    jobNames: []
+    value:
+      messages: []
+      inputs:
+        - /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
+        - /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
+        - /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
+        - /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
+        - /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc
+        - /usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map
+        - >-
+          /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+        - >-
+          /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+        - >-
+          /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+        - >-
+          /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+        - >-
+          /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+        - >-
+          /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmex10.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi10.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi12.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi5.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi6.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi7.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi8.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy5.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy6.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy7.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy8.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmbx10.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmbx12.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmbxi10.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr10.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr12.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr17.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr5.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr6.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr7.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr8.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr9.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmri10.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmtt10.tfm
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmex10.pfb
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi10.pfb
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi5.pfb
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi7.pfb
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr10.pfb
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr5.pfb
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr6.pfb
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr7.pfb
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr8.pfb
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr9.pfb
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri10.pfb
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
+        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt10.pfb
+        - /usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+        - /usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+        - /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/amscls/amsthm.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/base/size10.clo
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/caption/subcaption.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/colortbl/colortbl.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/enumitem/enumitem.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hpdftex.def
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.cfg
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omllmm.fd
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omslmr.fd
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omslmsy.fd
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omxlmex.fd
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/lm/ot1lmr.fd
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/lm/ot1lmtt.fd
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mathtools.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mhsetup.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/ms/everyshi.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/auxhook.sty
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+        - >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/tabu/tabu.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/tools/array.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/varwidth/varwidth.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+        - /usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+        - /usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf
+        - /usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+        - /usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt
+        - /usr/local/texlive/2018/texmf.cnf
+        - A4_1_1.png
+        - A4_1_2.png
+        - A4_2.png
+        - A4_3.png
+        - A4_4.png
+        - Assignment5-Bayesian.aux
+        - Assignment5-Bayesian.out
+        - Assignment5-Bayesian.tex
+        - BG.png
+      outputs:
+        - Assignment5-Bayesian.aux
+        - Assignment5-Bayesian.log
+        - Assignment5-Bayesian.out
+        - Assignment5-Bayesian.pdf
+      calls: []
+    type: ParsedFileListing
+  Assignment5-Bayesian.log-ParsedLaTeXLog:
+    timeStamp: 2019-04-13T03:23:07.059Z
+    jobNames: []
+    value:
+      messages:
+        - name: pdfTeX
+          severity: info
+          text: inputenc 2018/04/06 v1.3b Input encoding file
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 27
+              end: 27
+        - name: pdfTeX
+          severity: info
+          text: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 31
+              end: 31
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting symbol font `operators' in version `normal' OT1/cmr/m/n
+            --> OT1/lmr/m/n.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 22
+              end: 22
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 32
+              end: 33
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting symbol font `letters' in version `normal' OML/cmm/m/it
+            --> OML/lmm/m/it.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 23
+              end: 23
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 34
+              end: 35
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting symbol font `symbols' in version `normal' OMS/cmsy/m/n
+            --> OMS/lmsy/m/n.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 24
+              end: 24
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 36
+              end: 37
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting symbol font `largesymbols' in version `normal'
+            OMX/cmex/m/n --> OMX/lmex/m/n.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 25
+              end: 25
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 38
+              end: 39
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting symbol font `operators' in version `bold' OT1/cmr/bx/n
+            --> OT1/lmr/bx/n.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 26
+              end: 26
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 40
+              end: 41
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting symbol font `letters' in version `bold' OML/cmm/b/it -->
+            OML/lmm/b/it.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 27
+              end: 27
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 42
+              end: 43
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting symbol font `symbols' in version `bold' OMS/cmsy/b/n -->
+            OMS/lmsy/b/n.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 28
+              end: 28
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 44
+              end: 45
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting symbol font `largesymbols' in version `bold'
+            OMX/cmex/m/n --> OMX/lmex/m/n.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 29
+              end: 29
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 46
+              end: 47
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting math alphabet `\mathbf' in version `normal' OT1/cmr/bx/n
+            --> OT1/lmr/bx/n.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 31
+              end: 31
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 48
+              end: 49
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting math alphabet `\mathsf' in version `normal' OT1/cmss/m/n
+            --> OT1/lmss/m/n.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 32
+              end: 32
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 50
+              end: 51
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting math alphabet `\mathit' in version `normal' OT1/cmr/m/it
+            --> OT1/lmr/m/it.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 33
+              end: 33
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 52
+              end: 53
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting math alphabet `\mathtt' in version `normal' OT1/cmtt/m/n
+            --> OT1/lmtt/m/n.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 34
+              end: 34
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 54
+              end: 55
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting math alphabet `\mathbf' in version `bold' OT1/cmr/bx/n
+            --> OT1/lmr/bx/n.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 35
+              end: 35
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 56
+              end: 57
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting math alphabet `\mathsf' in version `bold' OT1/cmss/bx/n
+            --> OT1/lmss/bx/n.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 36
+              end: 36
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 58
+              end: 59
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting math alphabet `\mathit' in version `bold' OT1/cmr/bx/it
+            --> OT1/lmr/bx/it.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 37
+              end: 37
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 60
+              end: 61
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting math alphabet `\mathtt' in version `bold' OT1/cmtt/m/n
+            --> OT1/lmtt/m/n.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+            range:
+              start: 38
+              end: 38
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 62
+              end: 63
+        - name: pdfTeX
+          severity: info
+          text: geometry 2018/03/24 v5.7 Page Geometry
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 65
+              end: 65
+        - name: pdfTeX
+          severity: info
+          text: keyval 2014/10/28 v1.15 key=value parser (DPC)
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 67
+              end: 67
+        - name: pdfTeX
+          severity: info
+          text: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 70
+              end: 70
+        - name: pdfTeX
+          severity: info
+          text: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 72
+              end: 72
+        - severity: info
+          name: pdfTeX
+          category: Package ifvtex
+          text: VTeX not detected.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 73
+              end: 73
+        - name: pdfTeX
+          severity: info
+          text: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 75
+              end: 75
+        - name: pdfTeX
+          severity: info
+          text: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 90
+              end: 90
+        - name: pdfTeX
+          severity: info
+          text: >-
+            hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref
+            (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 92
+              end: 93
+        - name: pdfTeX
+          severity: info
+          text: 'hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)'
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 95
+              end: 95
+        - name: pdfTeX
+          severity: info
+          text: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 96
+              end: 96
+        - name: pdfTeX
+          severity: info
+          text: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 97
+              end: 97
+        - name: pdfTeX
+          severity: info
+          text: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 98
+              end: 98
+        - name: pdfTeX
+          severity: info
+          text: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 99
+              end: 99
+        - severity: info
+          name: pdfTeX
+          category: Package ifluatex
+          text: LuaTeX not detected.
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 100
+              end: 100
+        - severity: info
+          name: pdfTeX
+          category: Package hobsub
+          text: Skipping package `ifvtex' (already loaded).
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 101
+              end: 101
+        - name: pdfTeX
+          severity: info
+          text: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 102
+              end: 102
+        - severity: info
+          name: pdfTeX
+          category: Package hobsub
+          text: Skipping package `ifpdf' (already loaded).
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 103
+              end: 103
+        - name: pdfTeX
+          severity: info
+          text: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 104
+              end: 104
+        - severity: info
+          name: pdfTeX
+          category: Package etexcmds
+          text: >-
+            Could not find \expanded. That can mean that you are not using
+            pdfTeX 1.50 or that some package has redefined \expanded. In the
+            latter case, load this package earlier.
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 105
+              end: 108
+        - name: pdfTeX
+          severity: info
+          text: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 109
+              end: 109
+        - name: pdfTeX
+          severity: info
+          text: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 110
+              end: 110
+        - name: pdfTeX
+          severity: info
+          text: >-
+            pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX
+            (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 111
+              end: 112
+        - severity: info
+          name: pdfTeX
+          category: Package pdftexcmds
+          text: LuaTeX not detected.
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 113
+              end: 113
+        - severity: info
+          name: pdfTeX
+          category: Package pdftexcmds
+          text: \pdf@primitive is available.
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 114
+              end: 114
+        - severity: info
+          name: pdfTeX
+          category: Package pdftexcmds
+          text: \pdf@ifprimitive is available.
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 115
+              end: 115
+        - severity: info
+          name: pdfTeX
+          category: Package pdftexcmds
+          text: \pdfdraftmode found.
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 116
+              end: 116
+        - name: pdfTeX
+          severity: info
+          text: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 117
+              end: 117
+        - name: pdfTeX
+          severity: info
+          text: >-
+            bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers
+            (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 118
+              end: 119
+        - name: pdfTeX
+          severity: info
+          text: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 120
+              end: 120
+        - name: pdfTeX
+          severity: info
+          text: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 121
+              end: 121
+        - severity: info
+          name: pdfTeX
+          category: Package hobsub
+          text: Skipping package `hobsub' (already loaded).
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 123
+              end: 123
+        - name: pdfTeX
+          severity: info
+          text: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 124
+              end: 124
+        - name: pdfTeX
+          severity: info
+          text: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 125
+              end: 125
+        - name: pdfTeX
+          severity: info
+          text: xcolor-patch 2016/05/16 xcolor patch
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 126
+              end: 126
+        - name: pdfTeX
+          severity: info
+          text: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 127
+              end: 127
+        - severity: info
+          name: pdfTeX
+          category: Package atveryend
+          text: \enddocument detected (standard20110627).
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 128
+              end: 128
+        - name: pdfTeX
+          severity: info
+          text: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 129
+              end: 129
+        - name: pdfTeX
+          severity: info
+          text: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 130
+              end: 130
+        - name: pdfTeX
+          severity: info
+          text: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 131
+              end: 131
+        - name: pdfTeX
+          severity: info
+          text: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/auxhook.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 133
+              end: 133
+        - name: pdfTeX
+          severity: info
+          text: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 135
+              end: 135
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Hyper figures OFF
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+            range:
+              start: 4509
+              end: 4509
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 149
+              end: 149
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Link nesting OFF
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+            range:
+              start: 4514
+              end: 4514
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 150
+              end: 150
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Hyper index ON
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+            range:
+              start: 4517
+              end: 4517
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 151
+              end: 151
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Plain pages OFF
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+            range:
+              start: 4524
+              end: 4524
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 152
+              end: 152
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Backreferencing OFF
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+            range:
+              start: 4529
+              end: 4529
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 153
+              end: 153
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Implicit mode ON; LaTeX internals redefined.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 154
+              end: 154
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Bookmarks ON
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+            range:
+              start: 4762
+              end: 4762
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 155
+              end: 155
+        - name: pdfTeX
+          severity: info
+          text: 'url 2013/09/16 ver 3.4 Verb mode for urls, etc.'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 159
+              end: 159
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \url
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+            range:
+              start: 5115
+              end: 5115
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 161
+              end: 161
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Hyper figures OFF
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+            range:
+              start: 6369
+              end: 6369
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 166
+              end: 166
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Link nesting OFF
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+            range:
+              start: 6374
+              end: 6374
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 167
+              end: 167
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Hyper index ON
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+            range:
+              start: 6377
+              end: 6377
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 168
+              end: 168
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: backreferencing OFF
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+            range:
+              start: 6384
+              end: 6384
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 169
+              end: 169
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Link coloring OFF
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+            range:
+              start: 6389
+              end: 6389
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 170
+              end: 170
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Link coloring with OCG OFF
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+            range:
+              start: 6394
+              end: 6394
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 171
+              end: 171
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: PDF/A mode OFF
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+            range:
+              start: 6399
+              end: 6399
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 172
+              end: 172
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \ref
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+            range:
+              start: 6439
+              end: 6439
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 173
+              end: 173
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \pageref
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+            range:
+              start: 6443
+              end: 6443
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 174
+              end: 174
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: 'Driver (autodetected): hpdftex.'
+          source:
+            file: Assignment5-Bayesian.tex
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 179
+              end: 179
+        - name: pdfTeX
+          severity: info
+          text: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 185
+              end: 185
+        - severity: info
+          name: pdfTeX
+          category: Package uniquecounter
+          text: New unique counter `rerunfilecheck'
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+            range:
+              start: 282
+              end: 282
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 186
+              end: 187
+        - name: pdfTeX
+          severity: info
+          text: enumitem 2011/09/28 v3.5.2 Customized lists
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/enumitem/enumitem.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 191
+              end: 191
+        - name: pdfTeX
+          severity: info
+          text: amsmath 2017/09/02 v2.17a AMS math features
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 198
+              end: 198
+        - name: pdfTeX
+          severity: info
+          text: amstext 2000/06/29 v2.01 AMS text
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 202
+              end: 202
+        - name: pdfTeX
+          severity: info
+          text: amsbsy 1999/11/29 v1.2d Bold Symbols
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 208
+              end: 208
+        - name: pdfTeX
+          severity: info
+          text: amsopn 2016/03/08 v2.02 operator names
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 211
+              end: 211
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \frac
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+            range:
+              start: 213
+              end: 213
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 214
+              end: 214
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \overline
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+            range:
+              start: 375
+              end: 375
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 217
+              end: 217
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \ldots
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+            range:
+              start: 472
+              end: 472
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 220
+              end: 220
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \dots
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+            range:
+              start: 475
+              end: 475
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 221
+              end: 221
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \cdots
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+            range:
+              start: 596
+              end: 596
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 222
+              end: 222
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Redeclaring font encoding OML
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+            range:
+              start: 712
+              end: 712
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 226
+              end: 226
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Redeclaring font encoding OMS
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+            range:
+              start: 713
+              end: 713
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 227
+              end: 227
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: 'Redefining \['
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+            range:
+              start: 2817
+              end: 2817
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 248
+              end: 248
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: 'Redefining \]'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+            range:
+              start: 2818
+              end: 2818
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 249
+              end: 249
+        - name: pdfTeX
+          severity: info
+          text: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 251
+              end: 251
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting math alphabet `\mathfrak' in version `bold' U/euf/m/n
+            --> U/euf/b/n.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+            range:
+              start: 106
+              end: 106
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 254
+              end: 255
+        - name: pdfTeX
+          severity: info
+          text: amsthm 2017/10/31 v2.20.4
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/amscls/amsthm.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 257
+              end: 257
+        - name: pdfTeX
+          severity: info
+          text: mathtools 2018/01/08 v1.21 mathematical typesetting tools
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mathtools.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 268
+              end: 268
+        - name: pdfTeX
+          severity: info
+          text: 'calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 270
+              end: 270
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \setlength
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
+            range:
+              start: 80
+              end: 80
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 277
+              end: 277
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \addtolength
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
+            range:
+              start: 81
+              end: 81
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 278
+              end: 278
+        - name: pdfTeX
+          severity: info
+          text: mhsetup 2017/03/31 v1.3 programming setup (MH)
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mhsetup.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 282
+              end: 282
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Thecontrolsequence`\('isalreadyrobust
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mathtools.sty
+            range:
+              start: 129
+              end: 129
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 284
+              end: 284
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Thecontrolsequence`\)'isalreadyrobust
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mathtools.sty
+            range:
+              start: 129
+              end: 129
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 285
+              end: 285
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: 'Thecontrolsequence`\[''isalreadyrobust'
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mathtools.sty
+            range:
+              start: 129
+              end: 129
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 286
+              end: 286
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: 'Thecontrolsequence`\]''isalreadyrobust'
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mathtools.sty
+            range:
+              start: 129
+              end: 129
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 287
+              end: 287
+        - name: pdfTeX
+          severity: info
+          text: array 2018/04/07 v2.4g Tabular extension package (FMi)
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/tools/array.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 298
+              end: 298
+        - name: pdfTeX
+          severity: info
+          text: tabu 2011/02/26 v2.8 - flexible LaTeX tabulars (FC)
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/tabu/tabu.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 307
+              end: 307
+        - name: pdfTeX
+          severity: info
+          text: varwidth 2009/03/30 ver 0.92; Variable-width minipages
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/varwidth/varwidth.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 309
+              end: 309
+        - name: pdfTeX
+          severity: info
+          text: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 338
+              end: 338
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: 'Driver file: pdftex.def'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+            range:
+              start: 225
+              end: 225
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 342
+              end: 342
+        - name: pdfTeX
+          severity: info
+          text: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/colortbl/colortbl.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 346
+              end: 346
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: Model `cmy' substituted by `cmy0'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+            range:
+              start: 1348
+              end: 1348
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 351
+              end: 351
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: Model `hsb' substituted by `rgb'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+            range:
+              start: 1352
+              end: 1352
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 352
+              end: 352
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: Model `RGB' extended
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+            range:
+              start: 1364
+              end: 1364
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 353
+              end: 353
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: Model `HTML' substituted by `rgb'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+            range:
+              start: 1366
+              end: 1366
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 354
+              end: 354
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: Model `Hsb' substituted by `hsb'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+            range:
+              start: 1367
+              end: 1367
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 355
+              end: 355
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: Model `tHsb' substituted by `hsb'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+            range:
+              start: 1368
+              end: 1368
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 356
+              end: 356
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: Model `HSB' substituted by `hsb'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+            range:
+              start: 1369
+              end: 1369
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 357
+              end: 357
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: Model `Gray' substituted by `gray'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+            range:
+              start: 1370
+              end: 1370
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 358
+              end: 358
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: Model `wave' substituted by `hsb'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+            range:
+              start: 1371
+              end: 1371
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 359
+              end: 359
+        - name: pdfTeX
+          severity: info
+          text: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/ms/everyshi.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 374
+              end: 374
+        - name: pdfTeX
+          severity: info
+          text: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.te
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 377
+              end: 377
+        - name: pdfTeX
+          severity: info
+          text: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 379
+              end: 379
+        - name: pdfTeX
+          severity: info
+          text: 'graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 382
+              end: 382
+        - name: pdfTeX
+          severity: info
+          text: 'graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 384
+              end: 384
+        - name: pdfTeX
+          severity: info
+          text: trig 2016/01/03 v1.10 sin cos tan (DPC)
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 386
+              end: 386
+        - severity: info
+          name: pdfTeX
+          category: Package graphics
+          text: 'Driver file: pdftex.def'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+            range:
+              start: 99
+              end: 99
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 390
+              end: 390
+        - name: pdfTeX
+          severity: info
+          text: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 584
+              end: 584
+        - name: pdfTeX
+          severity: info
+          text: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 590
+              end: 590
+        - name: pdfTeX
+          severity: info
+          text: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 597
+              end: 597
+        - name: pdfTeX
+          severity: info
+          text: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 606
+              end: 606
+        - name: pdfTeX
+          severity: info
+          text: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/latex/caption/subcaption.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 642
+              end: 642
+        - name: pdfTeX
+          severity: info
+          text: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 644
+              end: 644
+        - name: pdfTeX
+          severity: info
+          text: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 646
+              end: 646
+        - severity: info
+          name: pdfTeX
+          category: Package caption3
+          text: 'TeX engine: e-TeX'
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
+            range:
+              start: 67
+              end: 67
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 647
+              end: 647
+        - severity: info
+          name: pdfTeX
+          category: Package caption
+          text: hyperref package is loaded.
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 657
+              end: 657
+        - name: pdfTeX
+          severity: info
+          text: wrapfig 2003/01/31 v 3.6
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 667
+              end: 667
+        - name: pdfTeX
+          severity: info
+          text: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 669
+              end: 669
+        - name: pdfTeX
+          severity: info
+          text: listings 2015/06/04 1.6 (Carsten Heinz)
+          source:
+            file: Assignment5-Bayesian.tex
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 691
+              end: 691
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for OML/cmm/m/it ... okay
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 695
+              end: 696
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for T1/cmr/m/n ... okay
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 697
+              end: 698
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for OT1/cmr/m/n ... okay
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 699
+              end: 700
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for OMS/cmsy/m/n ... okay
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 701
+              end: 702
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for OMX/cmex/m/n ... okay
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 703
+              end: 704
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for U/cmr/m/n ... okay
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 705
+              end: 706
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for PD1/pdf/m/n ... okay
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 707
+              end: 708
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Try loading font information for OT1+lmr
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 709
+              end: 709
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Link coloring OFF
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 748
+              end: 748
+        - name: pdfTeX
+          severity: info
+          text: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 750
+              end: 750
+        - name: pdfTeX
+          severity: info
+          text: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 752
+              end: 752
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \ref
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 756
+              end: 756
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \pageref
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 757
+              end: 757
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \nameref
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 758
+              end: 758
+        - name: pdfTeX
+          severity: info
+          text: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 778
+              end: 778
+        - name: pdfTeX
+          severity: info
+          text: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+          source:
+            file: /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 780
+              end: 780
+        - severity: info
+          name: pdfTeX
+          category: Package epstopdf-base
+          text: Redefining graphics rule for `.eps'
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+            range:
+              start: 438
+              end: 438
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 782
+              end: 783
+        - severity: info
+          name: pdfTeX
+          category: Package grfext
+          text: >-
+            Graphics extension search list:
+            [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+            \AppendGraphicsExtensions.
+          source:
+            file: >-
+              /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+            range:
+              start: 456
+              end: 456
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 784
+              end: 787
+        - severity: info
+          name: pdfTeX
+          category: Package caption
+          text: Begin \AtBeginDocument code.
+          source:
+            file: Assignment5-Bayesian.tex
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 792
+              end: 792
+        - severity: info
+          name: pdfTeX
+          category: Package caption
+          text: listings package is loaded.
+          source:
+            file: Assignment5-Bayesian.tex
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 793
+              end: 793
+        - severity: info
+          name: pdfTeX
+          category: Package caption
+          text: wrapfig package is loaded.
+          source:
+            file: Assignment5-Bayesian.tex
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 794
+              end: 794
+        - severity: info
+          name: pdfTeX
+          category: Package caption
+          text: End \AtBeginDocument code.
+          source:
+            file: Assignment5-Bayesian.tex
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 795
+              end: 795
+        - severity: info
+          name: pdfTeX
+          category: Package pdftex.def
+          text: 'BG.png used Requested size: 597.50787pt x 624.53752pt.'
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 72
+              end: 72
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 800
+              end: 801
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Try loading font information for OML+lmm
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 74
+              end: 74
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 802
+              end: 802
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Try loading font information for OMS+lmsy
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 74
+              end: 74
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 806
+              end: 806
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Try loading font information for OMX+lmex
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 74
+              end: 74
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 811
+              end: 811
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: External font `lmex10' loaded for size <12>.
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 74
+              end: 74
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 816
+              end: 817
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: External font `lmex10' loaded for size <8>.
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 74
+              end: 74
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 818
+              end: 819
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: External font `lmex10' loaded for size <6>.
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 74
+              end: 74
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 820
+              end: 821
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Try loading font information for U+msa
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 74
+              end: 74
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 822
+              end: 822
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Try loading font information for U+msb
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 74
+              end: 74
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 826
+              end: 826
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: External font `lmex10' loaded for size <10>.
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 94
+              end: 94
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 833
+              end: 834
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: External font `lmex10' loaded for size <7>.
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 94
+              end: 94
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 835
+              end: 836
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: External font `lmex10' loaded for size <5>.
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 94
+              end: 94
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 837
+              end: 838
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Try loading font information for OMS+lmr
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 96
+              end: 96
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 839
+              end: 839
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Font shape `OMS/lmr/m/n' in size <10> not available Font shape
+            `OMS/lmsy/m/n' tried instead.
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 96
+              end: 96
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 843
+              end: 844
+        - severity: info
+          name: pdfTeX
+          category: Package pdftex.def
+          text: 'A4_1_1.png used Requested size: 203.83417pt x 141.94597pt.'
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 133
+              end: 133
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 854
+              end: 855
+        - severity: info
+          name: pdfTeX
+          category: Package pdftex.def
+          text: 'A4_1_2.png used Requested size: 203.83417pt x 141.00421pt.'
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 137
+              end: 137
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 859
+              end: 860
+        - severity: info
+          name: pdfTeX
+          category: Package pdftex.def
+          text: 'A4_2.png used Requested size: 158.54152pt x 113.64693pt.'
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 182
+              end: 182
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 866
+              end: 867
+        - severity: warning
+          name: pdfTeX
+          category: Package varwidth
+          text: Failed to reprocess entire contents
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 210
+              end: 210
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 869
+              end: 870
+        - severity: warning
+          name: pdfTeX
+          category: Package varwidth
+          text: Failed to reprocess entire contents
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 210
+              end: 210
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 873
+              end: 874
+        - severity: info
+          name: pdfTeX
+          category: Package pdftex.def
+          text: 'A4_3.png used Requested size: 452.9679pt x 124.62009pt.'
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 221
+              end: 221
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 884
+              end: 885
+        - severity: info
+          name: pdfTeX
+          category: Package pdftex.def
+          text: 'A4_4.png used Requested size: 452.9679pt x 286.27695pt.'
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 233
+              end: 233
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 891
+              end: 892
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Try loading font information for OT1+lmtt
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 248
+              end: 248
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 893
+              end: 894
+        - severity: info
+          name: pdfTeX
+          category: Package atveryend
+          text: Empty hook `BeforeClearDocument'
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 256
+              end: 256
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 898
+              end: 898
+        - severity: info
+          name: pdfTeX
+          category: Package atveryend
+          text: Empty hook `AfterLastShipout'
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 256
+              end: 256
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 899
+              end: 899
+        - severity: info
+          name: pdfTeX
+          category: Package atveryend
+          text: Executing hook `AtVeryEndDocument'
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 256
+              end: 256
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 901
+              end: 901
+        - severity: info
+          name: pdfTeX
+          category: Package atveryend
+          text: Executing hook `AtEndAfterFileList'
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 256
+              end: 256
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 902
+              end: 902
+        - severity: info
+          name: pdfTeX
+          category: Package rerunfilecheck
+          text: >-
+            File `Assignment5-Bayesian.out' has not changed. Checksum:
+            D41D8CD98F00B204E9800998ECF8427E;0.
+          source:
+            file: Assignment5-Bayesian.tex
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 903
+              end: 904
+        - severity: info
+          name: pdfTeX
+          category: Package atveryend
+          text: Empty hook `AtVeryVeryEnd'
+          source:
+            file: Assignment5-Bayesian.tex
+            range:
+              start: 256
+              end: 256
+          log:
+            file: Assignment5-Bayesian.log
+            range:
+              start: 905
+              end: 905
+      inputs: []
+      outputs: []
+      calls: []
+    type: ParsedLaTeXLog
+  Assignment5-Bayesian.pdf:
+    timeStamp: 2019-04-13T03:23:06.772Z
+    jobNames: []
+    hash: x7NbynhCmu4/4qegRA8yIFL61V5KgXWXhjCPbPS6ap8=
+    type: PortableDocumentFormat
+  Assignment5-Bayesian.aux:
+    timeStamp: 2019-04-13T03:23:06.600Z
+    jobNames: []
+    hash: FeFfA203i659aBi3iwDI/wVZwtjeL8v42u1496mduI0=
+    type: LaTeXAuxilary
+  Assignment5-Bayesian.fls:
+    timeStamp: 2019-04-13T03:23:06.744Z
+    jobNames: []
+    hash: GfdtjP34hyAAKOxub1XUMAnLWd9HDU6P/cLlMPYKfyU=
+    type: FileListing
+  Assignment5-Bayesian.aux-ParsedLaTeXAuxilary:
+    timeStamp: 2019-04-13T03:22:56.197Z
+    jobNames: []
+    value:
+      commands:
+        - relax
+        - providecommand
+        - providecommand
+        - HyperFirstAtBeginDocument
+        - global
+        - gdef
+        - global
+        - gdef
+        - gdef
+        - AtEndDocument
+        - let
+        - let
+        - fi
+        - fi
+        - global
+        - gdef
+        - providecommand
+        - providecommand
+        - pgfsyspdfmark
+        - '@writefile'
+        - providecommand
+        - newlabel
+        - '@writefile'
+        - newlabel
+        - '@writefile'
+        - newlabel
+        - '@writefile'
+        - newlabel
+        - '@writefile'
+        - newlabel
+    type: ParsedLaTeXAuxilary
+  /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc:
+    timeStamp: 2016-11-25T18:31:08.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc:
+    timeStamp: 2016-11-25T18:31:08.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc:
+    timeStamp: 2016-11-25T18:31:08.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc:
+    timeStamp: 2016-11-25T18:31:08.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc:
+    timeStamp: 2016-11-25T18:31:08.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map:
+    timeStamp: 2017-11-27T23:19:31.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm:
+    timeStamp: 2016-11-25T18:31:38.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm:
+    timeStamp: 2016-11-25T18:31:38.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm:
+    timeStamp: 2016-11-25T18:31:38.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm:
+    timeStamp: 2016-11-25T18:31:38.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm:
+    timeStamp: 2016-11-25T18:31:38.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm:
+    timeStamp: 2016-11-25T18:31:38.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmex10.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi10.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi12.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi5.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi6.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi7.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi8.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy5.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy6.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy7.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy8.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmbx10.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmbx12.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmbxi10.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr10.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr12.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr17.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr5.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr6.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr7.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr8.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr9.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmri10.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmtt10.tfm:
+    timeStamp: 2016-11-25T18:31:52.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx10.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmex10.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi10.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi5.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi7.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr10.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr5.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr6.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr7.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr8.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr9.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri10.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt10.pfb:
+    timeStamp: 2016-11-25T18:32:22.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii:
+    timeStamp: 2016-11-25T18:33:26.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty:
+    timeStamp: 2016-11-25T18:33:35.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty:
+    timeStamp: 2016-11-25T18:33:35.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty:
+    timeStamp: 2018-03-30T21:19:41.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty:
+    timeStamp: 2016-11-25T18:33:35.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty:
+    timeStamp: 2017-03-26T21:48:50.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifvtex.sty:
+    timeStamp: 2016-11-25T18:33:35.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+    type: TeX
+  /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def:
+    timeStamp: 2016-11-25T18:33:36.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/tex/latex/amscls/amsthm.sty:
+    timeStamp: 2017-12-19T22:32:49.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty:
+    timeStamp: 2016-11-25T18:33:40.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd:
+    timeStamp: 2016-11-25T18:33:40.000Z
+    jobNames: []
+    type: FontDescription
+  /usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd:
+    timeStamp: 2016-11-25T18:33:40.000Z
+    jobNames: []
+    type: FontDescription
+  /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty:
+    timeStamp: 2018-04-07T20:51:30.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty:
+    timeStamp: 2018-04-07T20:51:30.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty:
+    timeStamp: 2018-04-07T20:51:30.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty:
+    timeStamp: 2018-04-07T20:51:30.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty:
+    timeStamp: 2018-04-07T20:51:30.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls:
+    timeStamp: 2018-04-06T21:33:45.000Z
+    jobNames: []
+    type: LaTeXClass
+  /usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty:
+    timeStamp: 2018-04-06T21:33:45.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/base/size10.clo:
+    timeStamp: 2018-04-06T21:33:45.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty:
+    timeStamp: 2016-11-25T18:33:43.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty:
+    timeStamp: 2016-11-25T18:33:43.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/caption/subcaption.sty:
+    timeStamp: 2016-11-25T18:33:43.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/colortbl/colortbl.sty:
+    timeStamp: 2016-11-25T18:33:45.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/enumitem/enumitem.sty:
+    timeStamp: 2016-11-25T18:33:47.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/eso-pic/eso-pic.sty:
+    timeStamp: 2016-11-25T18:33:47.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty:
+    timeStamp: 2018-03-25T21:23:05.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg:
+    timeStamp: 2016-11-25T18:33:50.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg:
+    timeStamp: 2016-11-25T18:33:50.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def:
+    timeStamp: 2018-01-09T22:36:08.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty:
+    timeStamp: 2018-04-07T20:53:05.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty:
+    timeStamp: 2018-04-07T20:53:05.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty:
+    timeStamp: 2018-04-07T20:53:05.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty:
+    timeStamp: 2018-04-07T20:53:05.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hpdftex.def:
+    timeStamp: 2018-02-07T22:17:34.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty:
+    timeStamp: 2018-02-07T22:17:34.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty:
+    timeStamp: 2016-11-25T18:33:51.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def:
+    timeStamp: 2018-02-07T22:17:34.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg:
+    timeStamp: 2016-11-25T18:33:53.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg:
+    timeStamp: 2016-11-25T18:33:53.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.cfg:
+    timeStamp: 2016-11-25T18:33:53.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.sty:
+    timeStamp: 2016-11-25T18:33:53.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty:
+    timeStamp: 2016-11-25T18:33:53.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty:
+    timeStamp: 2016-11-25T18:33:53.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omllmm.fd:
+    timeStamp: 2016-11-25T18:33:53.000Z
+    jobNames: []
+    type: FontDescription
+  /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omslmr.fd:
+    timeStamp: 2016-11-25T18:33:53.000Z
+    jobNames: []
+    type: FontDescription
+  /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omslmsy.fd:
+    timeStamp: 2016-11-25T18:33:53.000Z
+    jobNames: []
+    type: FontDescription
+  /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omxlmex.fd:
+    timeStamp: 2016-11-25T18:33:53.000Z
+    jobNames: []
+    type: FontDescription
+  /usr/local/texlive/2018/texmf-dist/tex/latex/lm/ot1lmr.fd:
+    timeStamp: 2016-11-25T18:33:53.000Z
+    jobNames: []
+    type: FontDescription
+  /usr/local/texlive/2018/texmf-dist/tex/latex/lm/ot1lmtt.fd:
+    timeStamp: 2016-11-25T18:33:53.000Z
+    jobNames: []
+    type: FontDescription
+  /usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mathtools.sty:
+    timeStamp: 2018-01-08T22:18:48.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mhsetup.sty:
+    timeStamp: 2017-06-06T21:53:26.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/ms/everyshi.sty:
+    timeStamp: 2016-11-25T18:33:55.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/auxhook.sty:
+    timeStamp: 2016-11-25T18:33:56.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty:
+    timeStamp: 2016-11-25T18:33:56.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty:
+    timeStamp: 2016-11-25T18:33:56.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty:
+    timeStamp: 2016-11-25T18:33:56.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty:
+    timeStamp: 2016-11-25T18:33:56.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty:
+    timeStamp: 2016-11-25T18:33:57.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty:
+    timeStamp: 2016-11-25T18:33:57.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty:
+    timeStamp: 2016-11-25T18:33:57.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty:
+    timeStamp: 2016-11-25T18:33:57.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty:
+    timeStamp: 2016-11-25T18:33:57.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/math/pgfmath.sty:
+    timeStamp: 2016-11-25T18:33:57.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty:
+    timeStamp: 2016-11-25T18:33:57.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgffor.sty:
+    timeStamp: 2016-11-25T18:33:57.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty:
+    timeStamp: 2016-11-25T18:33:57.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty:
+    timeStamp: 2016-11-25T18:33:57.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/tabu/tabu.sty:
+    timeStamp: 2016-11-25T18:34:00.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/tools/array.sty:
+    timeStamp: 2018-04-07T20:53:05.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty:
+    timeStamp: 2018-04-06T21:33:45.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty:
+    timeStamp: 2016-11-25T18:34:02.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/varwidth/varwidth.sty:
+    timeStamp: 2016-11-25T18:34:02.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/wrapfig/wrapfig.sty:
+    timeStamp: 2016-11-25T18:34:03.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty:
+    timeStamp: 2016-11-25T18:34:03.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf:
+    timeStamp: 2018-03-26T12:22:29.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map:
+    timeStamp: 2018-04-17T03:08:12.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt:
+    timeStamp: 2018-04-17T03:08:36.000Z
+    jobNames: []
+  /usr/local/texlive/2018/texmf.cnf:
+    timeStamp: 2018-04-17T03:08:03.000Z
+    jobNames: []
+  A4_1_1.png:
+    timeStamp: 2019-03-28T19:39:19.431Z
+    jobNames: []
+    hash: QroOiEmG8rwSXXL2p75JjE6OniEsriNoIrBaYFLrRcQ=
+  A4_1_2.png:
+    timeStamp: 2019-03-28T19:40:24.589Z
+    jobNames: []
+    hash: Sp066JXUyrIVSb88MLZPP0/F2473yn8dYt+7IY6/3II=
+  A4_2.png:
+    timeStamp: 2019-03-28T19:49:02.627Z
+    jobNames: []
+    hash: Xwlp6rgameVpr+MN93/DXZi7CXl9/fMKeWXWFyTNK/s=
+  A4_3.png:
+    timeStamp: 2019-03-27T22:53:45.378Z
+    jobNames: []
+    hash: fzTJbbVqtyLg9ByVIZHZzAlkGsIfRLKzd/tAjNv1LHE=
+  A4_4.png:
+    timeStamp: 2019-03-28T19:51:50.069Z
+    jobNames: []
+    hash: qHvTBuUiWhsENWlHbn/Vb7rgVb5fNtTFx75AijL95Gg=
+  Assignment5-Bayesian.out:
+    timeStamp: 2019-04-13T03:22:57.980Z
+    jobNames: []
+    hash: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+    type: OUT
+  BG.png:
+    timeStamp: 2019-02-12T23:27:36.586Z
+    jobNames: []
+    hash: waHQVREhMivssXaxZZHm3lUnVgVOmgUaRtoGeNpL6E0=
+  Assignment5-Bayesian.synctex.gz:
+    timeStamp: 2019-04-13T03:23:06.774Z
+    jobNames: []
+    hash: EEoAgVUR7ewZP+BgM9RBrJA79nxKScHhXIdcMobbyxo=
+    type: SyncTeX
+rules:
+  - name: ApplyOptions
+    command: load
+    phase: initialize
+    parameters: []
+    inputs:
+      - file: dicy.yaml-ParsedYAML
+        type: default
+      - file: Assignment5-Bayesian.yaml-ParsedYAML
+        type: default
+      - file: Assignment5-Bayesian.tex-ParsedLaTeXMagic
+        type: default
+      - file: dicy-instance.yaml-ParsedYAML
+        type: default
+      - file: >-
+          /Users/joanna.zyz/Library/Application
+          Support/dicy/config.yaml-ParsedYAML
+        type: default
+    outputs: []
+  - name: LoadAndValidateCache
+    command: load
+    phase: initialize
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: Migrate
+    command: load
+    phase: initialize
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: ApplyOptions
+    command: load
+    phase: execute
+    parameters: []
+    inputs:
+      - file: dicy.yaml-ParsedYAML
+        type: default
+      - file: Assignment5-Bayesian.yaml-ParsedYAML
+        type: default
+      - file: Assignment5-Bayesian.tex-ParsedLaTeXMagic
+        type: default
+      - file: dicy-instance.yaml-ParsedYAML
+        type: default
+      - file: >-
+          /Users/joanna.zyz/Library/Application
+          Support/dicy/config.yaml-ParsedYAML
+        type: default
+    outputs: []
+  - name: ParseOptionsFile
+    command: load
+    phase: execute
+    parameters: []
+    inputs:
+      - file: /Users/joanna.zyz/Library/Application Support/dicy/config.yaml
+        type: default
+    outputs:
+      - file: >-
+          /Users/joanna.zyz/Library/Application
+          Support/dicy/config.yaml-ParsedYAML
+        type: default
+  - name: ParseLaTeXMagic
+    command: load
+    phase: execute
+    parameters:
+      - Assignment5-Bayesian.tex
+    inputs:
+      - file: Assignment5-Bayesian.tex
+        type: default
+    outputs:
+      - file: Assignment5-Bayesian.tex-ParsedLaTeXMagic
+        type: default
+  - name: AssignJobNames
+    command: load
+    phase: finalize
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: FindLogFiles
+    command: build
+    phase: initialize
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: LaTeX
+    command: build
+    phase: execute
+    parameters:
+      - Assignment5-Bayesian.tex
+    inputs:
+      - file: Assignment5-Bayesian.tex
+        type: default
+      - file: Assignment5-Bayesian.fls-ParsedFileListing
+        type: default
+      - file: Assignment5-Bayesian.log-ParsedLaTeXLog
+        type: default
+      - file: Assignment5-Bayesian.aux
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmex10.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi10.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi12.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi5.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi6.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi7.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi8.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy5.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy6.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy7.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy8.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmbx10.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmbx12.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmbxi10.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr10.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr12.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr17.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr5.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr6.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr7.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr8.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr9.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmri10.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmtt10.tfm
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmex10.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi10.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi5.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi7.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr10.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr5.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr6.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr7.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr8.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr9.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri10.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt10.pfb
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/amscls/amsthm.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/base/size10.clo
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/caption/subcaption.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/colortbl/colortbl.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/enumitem/enumitem.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hpdftex.def
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.cfg
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omllmm.fd
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omslmr.fd
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omslmsy.fd
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omxlmex.fd
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/ot1lmr.fd
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/lm/ot1lmtt.fd
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mathtools.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mhsetup.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/ms/everyshi.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/auxhook.sty
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+        type: default
+      - file: >-
+          /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/tabu/tabu.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/tools/array.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/varwidth/varwidth.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+        type: default
+      - file: /usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf
+        type: default
+      - file: /usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+        type: default
+      - file: /usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt
+        type: default
+      - file: /usr/local/texlive/2018/texmf.cnf
+        type: default
+      - file: A4_1_1.png
+        type: default
+      - file: A4_1_2.png
+        type: default
+      - file: A4_2.png
+        type: default
+      - file: A4_3.png
+        type: default
+      - file: A4_4.png
+        type: default
+      - file: Assignment5-Bayesian.out
+        type: default
+      - file: BG.png
+        type: default
+    outputs:
+      - file: Assignment5-Bayesian.pdf
+        type: target
+      - file: Assignment5-Bayesian.aux
+        type: default
+      - file: Assignment5-Bayesian.fls
+        type: default
+      - file: Assignment5-Bayesian.log
+        type: default
+      - file: Assignment5-Bayesian.out
+        type: default
+      - file: Assignment5-Bayesian.synctex.gz
+        type: target
+  - name: ParseLaTeXLog
+    command: build
+    phase: execute
+    parameters:
+      - Assignment5-Bayesian.log
+    inputs:
+      - file: Assignment5-Bayesian.log
+        type: default
+    outputs:
+      - file: Assignment5-Bayesian.log-ParsedLaTeXLog
+        type: default
+  - name: LogProducedTargets
+    command: build
+    phase: finalize
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: CheckForMissingBuildRule
+    command: build
+    phase: finalize
+    parameters:
+      - Assignment5-Bayesian.tex
+    inputs:
+      - file: Assignment5-Bayesian.tex
+        type: default
+    outputs: []
+  - name: FindLogFiles
+    command: log
+    phase: initialize
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: ParseLaTeXLog
+    command: log
+    phase: execute
+    parameters:
+      - Assignment5-Bayesian.log
+    inputs:
+      - file: Assignment5-Bayesian.log
+        type: default
+    outputs:
+      - file: Assignment5-Bayesian.log-ParsedLaTeXLog
+        type: default
+  - name: ReportLogMessages
+    command: log
+    phase: execute
+    parameters:
+      - Assignment5-Bayesian.log-ParsedLaTeXLog
+    inputs:
+      - file: Assignment5-Bayesian.log-ParsedLaTeXLog
+        type: default
+    outputs: []
+  - name: SaveCache
+    command: save
+    phase: execute
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: ParseLaTeXAuxilary
+    command: build
+    phase: execute
+    parameters:
+      - Assignment5-Bayesian.aux
+    inputs:
+      - file: Assignment5-Bayesian.aux
+        type: default
+    outputs:
+      - file: Assignment5-Bayesian.aux-ParsedLaTeXAuxilary
+        type: default
+  - name: ParseFileListing
+    command: build
+    phase: execute
+    parameters:
+      - Assignment5-Bayesian.fls
+    inputs:
+      - file: Assignment5-Bayesian.fls
+        type: default
+    outputs:
+      - file: Assignment5-Bayesian.fls-ParsedFileListing
+        type: default

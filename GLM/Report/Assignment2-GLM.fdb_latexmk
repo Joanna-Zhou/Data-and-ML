@@ -1,5 +1,9 @@
 # Fdb version 3
-["pdflatex"] 1551408635 "Assignment2-GLM.tex" "Assignment2-GLM.pdf" "Assignment2-GLM" 1551408648
+["pdflatex"] 1552694716 "Assignment2-GLM.tex" "Assignment2-GLM.pdf" "Assignment2-GLM" 1552694728
+  "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1480098668 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
+  "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1480098668 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
+  "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1480098668 2840 216e6e45ad352e2456e1149f28885bee ""
+  "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc" 1480098668 2327 9d6df24f9c4f7368395224341a95523a ""
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1480098698 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1480098698 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -182,8 +186,8 @@
   "/usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1523934516 4220280 10cab8fbd7c5a7c52aba9917e190d018 ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
   "404.png" 1550014056 3318040 950dd9e8f01d42fa8736dbbafa1a42e3 ""
-  "Assignment2-GLM.aux" 1551408647 746 fe37345d3d41996ebe41c0128a5535bb ""
-  "Assignment2-GLM.tex" 1551408635 18277 29f470ddb5b70f0288279b9b75d51a75 ""
+  "Assignment2-GLM.aux" 1552694727 746 fe37345d3d41996ebe41c0128a5535bb ""
+  "Assignment2-GLM.tex" 1552694703 18276 d5b2087b2a15b13c4f955cf45923b4f7 ""
   "Q1.png" 1551367689 843867 c57663e1f070d119feeebc43b737a532 ""
   "Q2.png" 1551375322 666966 3e2dfb7937144504d10264219b7ca7bb ""
   "Q3_1.png" 1551408053 415202 96aedfd9e110448cf444a04eadc3f265 ""

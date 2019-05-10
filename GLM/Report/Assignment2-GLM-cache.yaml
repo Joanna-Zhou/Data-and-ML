@@ -71,7 +71,7 @@ options:
   $PATH: '/usr/texbin:/Library/TeX/texbin:$PATH'
 files:
   dicy-instance.yaml-ParsedYAML:
-    timeStamp: 2019-03-01T02:50:36.950Z
+    timeStamp: 2019-03-16T00:04:52.697Z
     jobNames: []
     value:
       severity: info
@@ -130,96 +130,58 @@ files:
       $PATH: '/usr/texbin:/Library/TeX/texbin:$PATH'
     type: ParsedYAML
   Assignment2-GLM.tex:
-    timeStamp: 2019-03-01T02:50:35.234Z
+    timeStamp: 2019-03-16T00:05:03.991Z
     jobNames: []
-    hash: g4MZZRQ1Dhm66NPOmw8A8C8/I3NWvb6LVwmfHpp4hMs=
+    hash: MzzAjFYOGUDuNUi0R3i4c8S5a4qddVmRScQ/7MNsrdU=
     type: LaTeX
     subType: article
   /Users/joanna.zyz/Library/Application Support/dicy/config.yaml:
-    timeStamp: 2019-03-01T02:45:27.170Z
+    timeStamp: 2019-03-16T00:04:31.989Z
     jobNames: []
     type: YAML
   x.y-Nil:
     jobNames: []
     type: Nil
   Assignment2-GLM.log:
-    timeStamp: 2019-03-01T02:51:03.910Z
+    timeStamp: 2019-03-16T00:05:05.429Z
     jobNames: []
-    hash: cptEf6gwbl7l4nAcU7g1NKnYMJ7rUM0+kdy86UuKvwY=
+    hash: fY9WXWkCn7u8EXoGtr31tJXJFTShOKh/IJf2v/hGEbU=
     type: LaTeXLog
     subType: pdfTeX
   Assignment2-GLM.fls-ParsedFileListing:
-    timeStamp: 2019-03-01T02:50:51.058Z
+    timeStamp: 2019-03-16T00:04:54.114Z
     jobNames: []
     value:
       messages: []
       inputs:
-        - /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
-        - /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
-        - /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
-        - /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
         - /usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map
         - >-
           /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-        - >-
-          /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
         - >-
           /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
         - >-
           /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
         - >-
-          /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-        - >-
           /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
         - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmbsy10.tfm
-        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmbsy5.tfm
         - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmbsy7.tfm
         - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmex10.tfm
-        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi10.tfm
         - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi12.tfm
-        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi5.tfm
         - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi6.tfm
-        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi7.tfm
         - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi8.tfm
         - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmib10.tfm
-        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmib5.tfm
         - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmib7.tfm
         - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm
-        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy5.tfm
         - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy6.tfm
-        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy7.tfm
         - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy8.tfm
-        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmbx10.tfm
         - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmbx12.tfm
-        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmbx5.tfm
         - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmbx6.tfm
-        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmbx7.tfm
         - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmbx8.tfm
         - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr10.tfm
         - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr12.tfm
         - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr17.tfm
-        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr5.tfm
         - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr6.tfm
-        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr7.tfm
         - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr8.tfm
-        - /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr9.tfm
-        - >-
-          /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
-        - >-
-          /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb
-        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
-        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
-        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmex10.pfb
-        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi10.pfb
-        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi5.pfb
-        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi7.pfb
-        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr10.pfb
-        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb
-        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr5.pfb
-        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr7.pfb
-        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr9.pfb
-        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
-        - /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy7.pfb
         - /usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
         - /usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
         - /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/atbegshi.sty
@@ -367,7 +329,6 @@ files:
         - /usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
         - /usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
         - /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omllmm.fd
-        - /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omslmr.fd
         - /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omslmsy.fd
         - /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omxlmex.fd
         - /usr/local/texlive/2018/texmf-dist/tex/latex/lm/ot1lmr.fd
@@ -407,10 +368,6 @@ files:
         - 404.png
         - Assignment2-GLM.aux
         - Assignment2-GLM.tex
-        - Q1.png
-        - Q2.png
-        - Q3_1.png
-        - Q3_2.png
       outputs:
         - Assignment2-GLM.aux
         - Assignment2-GLM.log
@@ -418,7 +375,7 @@ files:
       calls: []
     type: ParsedFileListing
   Assignment2-GLM.log-ParsedLaTeXLog:
-    timeStamp: 2019-03-01T02:51:04.303Z
+    timeStamp: 2019-03-16T00:04:54.137Z
     jobNames: []
     value:
       messages:
@@ -430,8 +387,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 27
-              end: 27
+              start: 28
+              end: 28
         - name: pdfTeX
           severity: info
           text: lmodern 2009/10/30 v1.6 Latin Modern Fonts
@@ -440,8 +397,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 31
-              end: 31
+              start: 33
+              end: 33
         - severity: info
           name: pdfTeX
           category: LaTeX Font
@@ -456,8 +413,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 32
-              end: 33
+              start: 34
+              end: 35
         - severity: info
           name: pdfTeX
           category: LaTeX Font
@@ -472,8 +429,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 34
-              end: 35
+              start: 36
+              end: 37
         - severity: info
           name: pdfTeX
           category: LaTeX Font
@@ -488,8 +445,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 36
-              end: 37
+              start: 38
+              end: 39
         - severity: info
           name: pdfTeX
           category: LaTeX Font
@@ -504,8 +461,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 38
-              end: 39
+              start: 40
+              end: 41
         - severity: info
           name: pdfTeX
           category: LaTeX Font
@@ -520,8 +477,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 40
-              end: 41
+              start: 42
+              end: 43
         - severity: info
           name: pdfTeX
           category: LaTeX Font
@@ -536,8 +493,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 42
-              end: 43
+              start: 44
+              end: 45
         - severity: info
           name: pdfTeX
           category: LaTeX Font
@@ -552,8 +509,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 44
-              end: 45
+              start: 46
+              end: 47
         - severity: info
           name: pdfTeX
           category: LaTeX Font
@@ -568,8 +525,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 46
-              end: 47
+              start: 48
+              end: 49
         - severity: info
           name: pdfTeX
           category: LaTeX Font
@@ -584,8 +541,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 48
-              end: 49
+              start: 50
+              end: 51
         - severity: info
           name: pdfTeX
           category: LaTeX Font
@@ -600,8 +557,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 50
-              end: 51
+              start: 52
+              end: 53
         - severity: info
           name: pdfTeX
           category: LaTeX Font
@@ -616,8 +573,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 52
-              end: 53
+              start: 54
+              end: 55
         - severity: info
           name: pdfTeX
           category: LaTeX Font
@@ -632,8 +589,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 54
-              end: 55
+              start: 56
+              end: 57
         - severity: info
           name: pdfTeX
           category: LaTeX Font
@@ -648,8 +605,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 56
-              end: 57
+              start: 58
+              end: 59
         - severity: info
           name: pdfTeX
           category: LaTeX Font
@@ -664,8 +621,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 58
-              end: 59
+              start: 60
+              end: 61
         - severity: info
           name: pdfTeX
           category: LaTeX Font
@@ -680,8 +637,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 60
-              end: 61
+              start: 62
+              end: 63
         - severity: info
           name: pdfTeX
           category: LaTeX Font
@@ -696,8 +653,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 62
-              end: 63
+              start: 64
+              end: 65
         - name: pdfTeX
           severity: info
           text: geometry 2018/03/24 v5.7 Page Geometry
@@ -706,8 +663,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 65
-              end: 65
+              start: 68
+              end: 68
         - name: pdfTeX
           severity: info
           text: keyval 2014/10/28 v1.15 key=value parser (DPC)
@@ -716,8 +673,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 67
-              end: 67
+              start: 71
+              end: 71
         - name: pdfTeX
           severity: info
           text: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
@@ -726,8 +683,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 70
-              end: 70
+              start: 75
+              end: 75
         - name: pdfTeX
           severity: info
           text: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
@@ -736,8 +693,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 72
-              end: 72
+              start: 78
+              end: 78
         - severity: info
           name: pdfTeX
           category: Package ifvtex
@@ -747,8 +704,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 73
-              end: 73
+              start: 79
+              end: 79
         - name: pdfTeX
           severity: info
           text: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
@@ -757,8 +714,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 75
-              end: 75
+              start: 82
+              end: 82
         - name: pdfTeX
           severity: info
           text: enumitem 2011/09/28 v3.5.2 Customized lists
@@ -767,8 +724,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 90
-              end: 90
+              start: 98
+              end: 98
         - name: pdfTeX
           severity: info
           text: amsmath 2017/09/02 v2.17a AMS math features
@@ -777,8 +734,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 97
-              end: 97
+              start: 106
+              end: 106
         - name: pdfTeX
           severity: info
           text: amstext 2000/06/29 v2.01 AMS text
@@ -787,8 +744,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 101
-              end: 101
+              start: 111
+              end: 111
         - name: pdfTeX
           severity: info
           text: amsbsy 1999/11/29 v1.2d Bold Symbols
@@ -797,8 +754,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 107
-              end: 107
+              start: 119
+              end: 119
         - name: pdfTeX
           severity: info
           text: amsopn 2016/03/08 v2.02 operator names
@@ -807,8 +764,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 110
-              end: 110
+              start: 123
+              end: 123
         - severity: info
           name: pdfTeX
           category: LaTeX
@@ -821,8 +778,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 113
-              end: 113
+              start: 126
+              end: 126
         - severity: info
           name: pdfTeX
           category: LaTeX
@@ -835,8 +792,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 116
-              end: 116
+              start: 129
+              end: 129
         - severity: info
           name: pdfTeX
           category: LaTeX
@@ -849,8 +806,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 119
-              end: 119
+              start: 132
+              end: 132
         - severity: info
           name: pdfTeX
           category: LaTeX
@@ -863,8 +820,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 120
-              end: 120
+              start: 133
+              end: 133
         - severity: info
           name: pdfTeX
           category: LaTeX
@@ -877,8 +834,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 121
-              end: 121
+              start: 134
+              end: 134
         - severity: info
           name: pdfTeX
           category: LaTeX Font
@@ -891,8 +848,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 125
-              end: 125
+              start: 138
+              end: 138
         - severity: info
           name: pdfTeX
           category: LaTeX Font
@@ -905,8 +862,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 126
-              end: 126
+              start: 139
+              end: 139
         - severity: info
           name: pdfTeX
           category: LaTeX
@@ -919,8 +876,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 147
-              end: 147
+              start: 160
+              end: 160
         - severity: info
           name: pdfTeX
           category: LaTeX
@@ -933,8 +890,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 148
-              end: 148
+              start: 161
+              end: 161
         - name: pdfTeX
           severity: info
           text: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
@@ -943,8 +900,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 150
-              end: 150
+              start: 164
+              end: 164
         - severity: info
           name: pdfTeX
           category: LaTeX Font
@@ -959,8 +916,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 153
-              end: 154
+              start: 167
+              end: 168
         - name: pdfTeX
           severity: info
           text: amsthm 2017/10/31 v2.20.4
@@ -969,8 +926,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 156
-              end: 156
+              start: 171
+              end: 171
         - name: pdfTeX
           severity: info
           text: mathtools 2018/01/08 v1.21 mathematical typesetting tools
@@ -980,8 +937,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 167
-              end: 167
+              start: 183
+              end: 183
         - name: pdfTeX
           severity: info
           text: 'calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)'
@@ -990,8 +947,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 169
-              end: 169
+              start: 186
+              end: 186
         - severity: info
           name: pdfTeX
           category: LaTeX
@@ -1004,8 +961,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 176
-              end: 176
+              start: 193
+              end: 193
         - severity: info
           name: pdfTeX
           category: LaTeX
@@ -1018,8 +975,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 177
-              end: 177
+              start: 194
+              end: 194
         - name: pdfTeX
           severity: info
           text: mhsetup 2017/03/31 v1.3 programming setup (MH)
@@ -1028,8 +985,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 181
-              end: 181
+              start: 199
+              end: 199
         - severity: info
           name: pdfTeX
           category: LaTeX
@@ -1043,8 +1000,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 183
-              end: 183
+              start: 201
+              end: 201
         - severity: info
           name: pdfTeX
           category: LaTeX
@@ -1058,8 +1015,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 184
-              end: 184
+              start: 202
+              end: 202
         - severity: info
           name: pdfTeX
           category: LaTeX
@@ -1073,8 +1030,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 185
-              end: 185
+              start: 203
+              end: 203
         - severity: info
           name: pdfTeX
           category: LaTeX
@@ -1088,8 +1045,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 186
-              end: 186
+              start: 204
+              end: 204
         - name: pdfTeX
           severity: info
           text: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
@@ -1098,8 +1055,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 198
-              end: 198
+              start: 217
+              end: 217
         - name: pdfTeX
           severity: info
           text: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
@@ -1108,8 +1065,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 200
-              end: 200
+              start: 220
+              end: 220
         - severity: info
           name: pdfTeX
           category: LaTeX Font
@@ -1122,8 +1079,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 204
-              end: 204
+              start: 224
+              end: 224
         - severity: info
           name: pdfTeX
           category: LaTeX
@@ -1136,8 +1093,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 205
-              end: 205
+              start: 225
+              end: 225
         - name: pdfTeX
           severity: info
           text: array 2018/04/07 v2.4g Tabular extension package (FMi)
@@ -1146,8 +1103,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 207
-              end: 207
+              start: 228
+              end: 228
         - name: pdfTeX
           severity: info
           text: tabu 2011/02/26 v2.8 - flexible LaTeX tabulars (FC)
@@ -1156,8 +1113,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 216
-              end: 216
+              start: 238
+              end: 238
         - name: pdfTeX
           severity: info
           text: varwidth 2009/03/30 ver 0.92; Variable-width minipages
@@ -1166,8 +1123,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 218
-              end: 218
+              start: 241
+              end: 241
         - name: pdfTeX
           severity: info
           text: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
@@ -1176,8 +1133,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 247
-              end: 247
+              start: 271
+              end: 271
         - severity: info
           name: pdfTeX
           category: Package xcolor
@@ -1190,8 +1147,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 251
-              end: 251
+              start: 276
+              end: 276
         - name: pdfTeX
           severity: info
           text: colortbl 2012/02/13 v1.0a Color table columns (DPC)
@@ -1200,8 +1157,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 255
-              end: 255
+              start: 282
+              end: 282
         - severity: info
           name: pdfTeX
           category: Package xcolor
@@ -1214,8 +1171,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 260
-              end: 260
+              start: 287
+              end: 287
         - severity: info
           name: pdfTeX
           category: Package xcolor
@@ -1228,8 +1185,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 261
-              end: 261
+              start: 288
+              end: 288
         - severity: info
           name: pdfTeX
           category: Package xcolor
@@ -1242,8 +1199,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 262
-              end: 262
+              start: 289
+              end: 289
         - severity: info
           name: pdfTeX
           category: Package xcolor
@@ -1256,8 +1213,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 263
-              end: 263
+              start: 290
+              end: 290
         - severity: info
           name: pdfTeX
           category: Package xcolor
@@ -1270,8 +1227,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 264
-              end: 264
+              start: 291
+              end: 291
         - severity: info
           name: pdfTeX
           category: Package xcolor
@@ -1284,8 +1241,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 265
-              end: 265
+              start: 292
+              end: 292
         - severity: info
           name: pdfTeX
           category: Package xcolor
@@ -1298,8 +1255,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 266
-              end: 266
+              start: 293
+              end: 293
         - severity: info
           name: pdfTeX
           category: Package xcolor
@@ -1312,8 +1269,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 267
-              end: 267
+              start: 294
+              end: 294
         - severity: info
           name: pdfTeX
           category: Package xcolor
@@ -1326,8 +1283,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 268
-              end: 268
+              start: 295
+              end: 295
         - name: pdfTeX
           severity: info
           text: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
@@ -1336,19 +1293,19 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 283
-              end: 283
+              start: 311
+              end: 311
         - name: pdfTeX
           severity: info
           text: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
           source:
             file: >-
-              /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.te
+              /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
           log:
             file: Assignment2-GLM.log
             range:
-              start: 286
-              end: 286
+              start: 314
+              end: 314
         - name: pdfTeX
           severity: info
           text: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
@@ -1358,8 +1315,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 288
-              end: 288
+              start: 316
+              end: 316
         - name: pdfTeX
           severity: info
           text: 'graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)'
@@ -1368,8 +1325,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 291
-              end: 291
+              start: 319
+              end: 319
         - name: pdfTeX
           severity: info
           text: 'graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)'
@@ -1378,8 +1335,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 293
-              end: 293
+              start: 322
+              end: 322
         - name: pdfTeX
           severity: info
           text: trig 2016/01/03 v1.10 sin cos tan (DPC)
@@ -1388,8 +1345,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 295
-              end: 295
+              start: 325
+              end: 325
         - severity: info
           name: pdfTeX
           category: Package graphics
@@ -1402,8 +1359,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 299
-              end: 299
+              start: 330
+              end: 330
         - name: pdfTeX
           severity: info
           text: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
@@ -1413,8 +1370,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 493
-              end: 493
+              start: 526
+              end: 526
         - name: pdfTeX
           severity: info
           text: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
@@ -1424,8 +1381,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 499
-              end: 499
+              start: 532
+              end: 532
         - name: pdfTeX
           severity: info
           text: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
@@ -1435,8 +1392,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 506
-              end: 506
+              start: 540
+              end: 540
         - name: pdfTeX
           severity: info
           text: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
@@ -1446,8 +1403,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 515
-              end: 515
+              start: 550
+              end: 550
         - name: pdfTeX
           severity: info
           text: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
@@ -1457,8 +1414,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 551
-              end: 551
+              start: 587
+              end: 587
         - name: pdfTeX
           severity: info
           text: caption 2016/02/21 v3.3-144 Customizing captions (AR)
@@ -1467,8 +1424,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 553
-              end: 553
+              start: 590
+              end: 590
         - name: pdfTeX
           severity: info
           text: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
@@ -1477,8 +1434,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 555
-              end: 555
+              start: 593
+              end: 593
         - severity: info
           name: pdfTeX
           category: Package caption3
@@ -1491,8 +1448,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 556
-              end: 556
+              start: 594
+              end: 594
         - name: pdfTeX
           severity: info
           text: wrapfig 2003/01/31 v 3.6
@@ -1501,8 +1458,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 575
-              end: 575
+              start: 614
+              end: 614
         - name: pdfTeX
           severity: info
           text: eso-pic 2015/07/21 v2.0g eso-pic (RN)
@@ -1511,8 +1468,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 577
-              end: 577
+              start: 617
+              end: 617
         - name: pdfTeX
           severity: info
           text: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
@@ -1522,8 +1479,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 579
-              end: 579
+              start: 620
+              end: 620
         - name: pdfTeX
           severity: info
           text: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
@@ -1533,8 +1490,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 581
-              end: 581
+              start: 623
+              end: 623
         - name: pdfTeX
           severity: info
           text: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
@@ -1544,8 +1501,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 583
-              end: 583
+              start: 626
+              end: 626
         - name: pdfTeX
           severity: info
           text: listings 2015/06/04 1.6 (Carsten Heinz)
@@ -1554,8 +1511,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 605
-              end: 605
+              start: 651
+              end: 651
         - severity: info
           name: pdfTeX
           category: LaTeX Font
@@ -1568,8 +1525,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 609
-              end: 610
+              start: 656
+              end: 657
         - severity: info
           name: pdfTeX
           category: LaTeX Font
@@ -1582,8 +1539,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 611
-              end: 612
+              start: 658
+              end: 659
         - severity: info
           name: pdfTeX
           category: LaTeX Font
@@ -1596,8 +1553,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 613
-              end: 614
+              start: 660
+              end: 661
         - severity: info
           name: pdfTeX
           category: LaTeX Font
@@ -1610,8 +1567,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 615
-              end: 616
+              start: 662
+              end: 663
         - severity: info
           name: pdfTeX
           category: LaTeX Font
@@ -1624,8 +1581,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 617
-              end: 618
+              start: 664
+              end: 665
         - severity: info
           name: pdfTeX
           category: LaTeX Font
@@ -1638,8 +1595,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 619
-              end: 620
+              start: 666
+              end: 667
         - severity: info
           name: pdfTeX
           category: LaTeX Font
@@ -1652,8 +1609,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 621
-              end: 621
+              start: 668
+              end: 668
         - name: pdfTeX
           severity: info
           text: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1663,8 +1620,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 673
-              end: 673
+              start: 721
+              end: 721
         - name: pdfTeX
           severity: info
           text: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
@@ -1673,8 +1630,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 675
-              end: 675
+              start: 724
+              end: 724
         - name: pdfTeX
           severity: info
           text: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
@@ -1684,8 +1641,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 677
-              end: 677
+              start: 727
+              end: 727
         - name: pdfTeX
           severity: info
           text: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
@@ -1695,8 +1652,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 679
-              end: 679
+              start: 730
+              end: 730
         - name: pdfTeX
           severity: info
           text: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
@@ -1706,8 +1663,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 681
-              end: 681
+              start: 733
+              end: 733
         - name: pdfTeX
           severity: info
           text: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
@@ -1717,8 +1674,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 683
-              end: 683
+              start: 736
+              end: 736
         - name: pdfTeX
           severity: info
           text: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
@@ -1728,8 +1685,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 685
-              end: 685
+              start: 739
+              end: 739
         - severity: info
           name: pdfTeX
           category: Package ifluatex
@@ -1740,8 +1697,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 686
-              end: 686
+              start: 740
+              end: 740
         - severity: info
           name: pdfTeX
           category: Package etexcmds
@@ -1755,8 +1712,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 688
-              end: 691
+              start: 742
+              end: 745
         - name: pdfTeX
           severity: info
           text: >-
@@ -1768,8 +1725,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 693
-              end: 694
+              start: 748
+              end: 749
         - severity: info
           name: pdfTeX
           category: Package pdftexcmds
@@ -1780,8 +1737,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 695
-              end: 695
+              start: 750
+              end: 750
         - severity: info
           name: pdfTeX
           category: Package pdftexcmds
@@ -1792,8 +1749,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 696
-              end: 696
+              start: 751
+              end: 751
         - severity: info
           name: pdfTeX
           category: Package pdftexcmds
@@ -1804,8 +1761,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 697
-              end: 697
+              start: 752
+              end: 752
         - severity: info
           name: pdfTeX
           category: Package pdftexcmds
@@ -1816,8 +1773,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 698
-              end: 698
+              start: 753
+              end: 753
         - severity: info
           name: pdfTeX
           category: Package epstopdf-base
@@ -1831,8 +1788,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 700
-              end: 701
+              start: 755
+              end: 756
         - severity: info
           name: pdfTeX
           category: Package grfext
@@ -1849,8 +1806,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 702
-              end: 705
+              start: 757
+              end: 760
         - severity: info
           name: pdfTeX
           category: Package caption
@@ -1860,8 +1817,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 710
-              end: 710
+              start: 767
+              end: 767
         - severity: info
           name: pdfTeX
           category: Package caption
@@ -1871,8 +1828,8 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 711
-              end: 711
+              start: 768
+              end: 768
         - severity: info
           name: pdfTeX
           category: Package caption
@@ -1882,307 +1839,32 @@ files:
           log:
             file: Assignment2-GLM.log
             range:
-              start: 712
-              end: 712
-        - severity: info
-          name: pdfTeX
-          category: Package caption
-          text: End \AtBeginDocument code.
-          source:
-            file: Assignment2-GLM.tex
-          log:
-            file: Assignment2-GLM.log
-            range:
-              start: 713
-              end: 713
-        - severity: info
-          name: pdfTeX
-          category: Package pdftex.def
-          text: '404.png used Requested size: 597.50787pt x 624.53752pt.'
-          source:
-            file: Assignment2-GLM.tex
-            range:
-              start: 71
-              end: 71
-          log:
-            file: Assignment2-GLM.log
-            range:
-              start: 719
-              end: 720
-        - severity: info
-          name: pdfTeX
-          category: LaTeX Font
-          text: Try loading font information for OML+lmm
-          source:
-            file: Assignment2-GLM.tex
-            range:
-              start: 73
-              end: 73
-          log:
-            file: Assignment2-GLM.log
-            range:
-              start: 721
-              end: 721
-        - severity: info
-          name: pdfTeX
-          category: LaTeX Font
-          text: Try loading font information for OMS+lmsy
-          source:
-            file: Assignment2-GLM.tex
-            range:
-              start: 73
-              end: 73
-          log:
-            file: Assignment2-GLM.log
-            range:
-              start: 725
-              end: 725
-        - severity: info
-          name: pdfTeX
-          category: LaTeX Font
-          text: Try loading font information for OMX+lmex
-          source:
-            file: Assignment2-GLM.tex
-            range:
-              start: 73
-              end: 73
-          log:
-            file: Assignment2-GLM.log
-            range:
-              start: 730
-              end: 730
-        - severity: info
-          name: pdfTeX
-          category: LaTeX Font
-          text: External font `lmex10' loaded for size <12>.
-          source:
-            file: Assignment2-GLM.tex
-            range:
-              start: 73
-              end: 73
-          log:
-            file: Assignment2-GLM.log
-            range:
-              start: 735
-              end: 736
-        - severity: info
-          name: pdfTeX
-          category: LaTeX Font
-          text: External font `lmex10' loaded for size <8>.
-          source:
-            file: Assignment2-GLM.tex
-            range:
-              start: 73
-              end: 73
-          log:
-            file: Assignment2-GLM.log
-            range:
-              start: 737
-              end: 738
-        - severity: info
-          name: pdfTeX
-          category: LaTeX Font
-          text: External font `lmex10' loaded for size <6>.
-          source:
-            file: Assignment2-GLM.tex
-            range:
-              start: 73
-              end: 73
-          log:
-            file: Assignment2-GLM.log
-            range:
-              start: 739
-              end: 740
-        - severity: info
-          name: pdfTeX
-          category: LaTeX Font
-          text: Try loading font information for U+msa
-          source:
-            file: Assignment2-GLM.tex
-            range:
-              start: 73
-              end: 73
-          log:
-            file: Assignment2-GLM.log
-            range:
-              start: 741
-              end: 741
-        - severity: info
-          name: pdfTeX
-          category: LaTeX Font
-          text: Try loading font information for U+msb
-          source:
-            file: Assignment2-GLM.tex
-            range:
-              start: 73
-              end: 73
-          log:
-            file: Assignment2-GLM.log
-            range:
-              start: 745
-              end: 745
-        - severity: info
-          name: pdfTeX
-          category: LaTeX Font
-          text: External font `lmex10' loaded for size <10>.
-          source:
-            file: Assignment2-GLM.tex
-            range:
-              start: 85
-              end: 85
-          log:
-            file: Assignment2-GLM.log
-            range:
-              start: 752
-              end: 753
-        - severity: info
-          name: pdfTeX
-          category: LaTeX Font
-          text: External font `lmex10' loaded for size <7>.
-          source:
-            file: Assignment2-GLM.tex
-            range:
-              start: 85
-              end: 85
-          log:
-            file: Assignment2-GLM.log
-            range:
-              start: 754
-              end: 755
-        - severity: info
-          name: pdfTeX
-          category: LaTeX Font
-          text: External font `lmex10' loaded for size <5>.
-          source:
-            file: Assignment2-GLM.tex
-            range:
-              start: 85
-              end: 85
-          log:
-            file: Assignment2-GLM.log
-            range:
-              start: 756
-              end: 757
-        - severity: info
-          name: pdfTeX
-          category: LaTeX Font
-          text: Try loading font information for OMS+lmr
-          source:
-            file: Assignment2-GLM.tex
-            range:
-              start: 97
-              end: 97
-          log:
-            file: Assignment2-GLM.log
-            range:
-              start: 758
-              end: 758
-        - severity: info
-          name: pdfTeX
-          category: LaTeX Font
-          text: >-
-            Font shape `OMS/lmr/m/n' in size <10> not available Font shape
-            `OMS/lmsy/m/n' tried instead.
-          source:
-            file: Assignment2-GLM.tex
-            range:
-              start: 97
-              end: 97
-          log:
-            file: Assignment2-GLM.log
-            range:
-              start: 762
-              end: 763
-        - severity: info
-          name: pdfTeX
-          category: Package pdftex.def
-          text: 'Q1.png used Requested size: 217.42265pt x 160.59305pt.'
-          source:
-            file: Assignment2-GLM.tex
-            range:
-              start: 166
-              end: 166
-          log:
-            file: Assignment2-GLM.log
-            range:
-              start: 772
-              end: 773
-        - severity: info
-          name: pdfTeX
-          category: Package pdftex.def
-          text: 'Q2.png used Requested size: 217.42265pt x 158.58969pt.'
-          source:
-            file: Assignment2-GLM.tex
-            range:
-              start: 170
-              end: 170
-          log:
-            file: Assignment2-GLM.log
-            range:
-              start: 782
-              end: 783
-        - severity: info
-          name: pdfTeX
-          category: Package pdftex.def
-          text: 'Q3_1.png used Requested size: 217.42265pt x 176.94505pt.'
-          source:
-            file: Assignment2-GLM.tex
-            range:
-              start: 243
-              end: 243
-          log:
-            file: Assignment2-GLM.log
-            range:
-              start: 789
-              end: 790
-        - severity: info
-          name: pdfTeX
-          category: Package pdftex.def
-          text: 'Q3_2.png used Requested size: 217.42265pt x 177.74pt.'
-          source:
-            file: Assignment2-GLM.tex
-            range:
-              start: 247
-              end: 247
-          log:
-            file: Assignment2-GLM.log
-            range:
-              start: 794
-              end: 795
+              start: 769
+              end: 769
       inputs: []
-      outputs:
-        - Assignment2-GLM.pdf
+      outputs: []
       calls: []
     type: ParsedLaTeXLog
   Assignment2-GLM.aux:
-    timeStamp: 2019-03-01T02:51:03.602Z
+    timeStamp: 2019-03-16T00:05:05.381Z
     jobNames: []
-    hash: kK4/ZqfG4VWLQW6f6Vbv7AeVzqKy/cSIEuOKCSb5+Ps=
+    hash: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
     type: LaTeXAuxilary
   Assignment2-GLM.fls:
-    timeStamp: 2019-03-01T02:51:03.830Z
+    timeStamp: 2019-03-16T00:05:05.495Z
     jobNames: []
-    hash: dTfeWZiqUqiPZlzLMRLWwlaCnOlauW3lk9879eOXoL4=
+    hash: /vnB0z9JnMyA6BdxeB02Vg5oMCawhVvHVqmSeLGr4VA=
     type: FileListing
   Assignment2-GLM.pdf:
-    timeStamp: 2019-03-01T02:51:03.908Z
+    timeStamp: 2019-03-16T00:05:05.442Z
     jobNames: []
-    hash: ZY/sxB6u4ayXaDrcOyD4hYvGuMGYz72nYmavCa7y+e8=
+    hash: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
     type: PortableDocumentFormat
   Assignment2-GLM.aux-ParsedLaTeXAuxilary:
-    timeStamp: 2019-03-01T02:50:51.047Z
+    timeStamp: 2019-03-16T00:04:54.102Z
     jobNames: []
     value:
-      commands:
-        - relax
-        - pgfsyspdfmark
-        - '@writefile'
-        - '@writefile'
-        - providecommand
-        - newlabel
-        - '@writefile'
-        - '@writefile'
-        - newlabel
+      commands: []
     type: ParsedLaTeXAuxilary
   /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc:
     timeStamp: 2016-11-25T18:31:08.000Z
@@ -2911,11 +2593,6 @@ files:
     timeStamp: 2019-03-01T02:40:58.613Z
     jobNames: []
     hash: I9uqJ+7/gI4S+0EQzXGlsekz1XQWHReOjIWI3ttrdAY=
-  Assignment2-GLM.synctex.gz:
-    timeStamp: 2019-03-01T02:51:03.909Z
-    jobNames: []
-    hash: CPzRkuIv7gjsRlOY0cpuaT9DzhInkXUwmZpMD2zS53E=
-    type: SyncTeX
 rules:
   - name: ApplyOptions
     command: load
@@ -3493,8 +3170,6 @@ rules:
       - file: Assignment2-GLM.log
         type: default
       - file: Assignment2-GLM.pdf
-        type: target
-      - file: Assignment2-GLM.synctex.gz
         type: target
   - name: ParseLaTeXLog
     command: build
