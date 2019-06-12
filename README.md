@@ -18,7 +18,7 @@ Projects in the order of time (old -> recent):
   * Compared the accuracy of training vs. validation set (i.e. learning curve)
   * Observed the ones that are "not confident" vs. those that are predicted incorrectly
  * __Bayesian__:
-  * Implemented Bayesian inference with various approximation methods including Laplace and MCMC Sampling
-  * For each method, compared different configurations
+   * Implemented Bayesian inference with various approximation methods including Laplace and MCMC Sampling
+   * For each method, compared different configurations
   
 Please see the _.ipynb_ files for the code and demo. Each project also has a report in the _report_ folder.
