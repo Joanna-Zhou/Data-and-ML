@@ -1,3 +1,2 @@
 # Data-and-ML
-Machine Learning related projects
-Hello
+Machine Learning projects without the use of any ML libraries.
